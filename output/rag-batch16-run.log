@@ -1,0 +1,4 @@
+Câu hỏi: 16 (start_id=1)
+=== Pipeline: retrieve + generate (batch=16, gen_batch=8) ===
+  BM25 cache: /home/buncha/Document/ROAD2AI/output/bm25_corpus.pkl (36076 chunks)
+  Hybrid retrieve: dense + BM25 + rerank (pool=50, rrf_top_k=50, top_k=15, rrf_k=60)

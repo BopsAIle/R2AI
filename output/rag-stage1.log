@@ -1,0 +1,4 @@
+Câu hỏi: 2000 (start_id=1)
+Dùng cache retrieve: 2000 câu
+=== Phase 2: Generate answers ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.07s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.14it/s]

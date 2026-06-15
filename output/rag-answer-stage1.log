@@ -1,0 +1,343 @@
+Câu hỏi: 2000 (start_id=1)
+Dùng cache retrieve: 2000 câu
+=== Phase 2: Generate answers ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.24s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.02s/it]
+  Generated 8/2000
+  Generated 16/2000
+  Generated 24/2000
+  Generated 32/2000
+Traceback (most recent call last):
+  File "/home/buncha/Document/ROAD2AI/scripts/rag_answer_stage1.py", line 486, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/buncha/Document/ROAD2AI/scripts/rag_answer_stage1.py", line 465, in main
+    answers = generate_answers(
+        retrieved,
+    ...<7 lines>...
+        fresh_output=not args.skip_answered,
+    )
+  File "/home/buncha/Document/ROAD2AI/scripts/rag_answer_stage1.py", line 375, in generate_answers
+    batch_results = generate_batch_answers(
+        model,
+    ...<4 lines>...
+        eos_ids=eos_ids,
+    )
+  File "/home/buncha/Document/ROAD2AI/scripts/rag_answer_stage1.py", line 311, in generate_batch_answers
+    generated = model.generate(
+        **inputs,
+    ...<5 lines>...
+        pad_token_id=tokenizer.pad_token_id,
+    )
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/transformers/generation/utils.py", line 2566, in generate
+    result = decoding_method(
+        self,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/transformers/generation/utils.py", line 2786, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 480, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/transformers/utils/generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 410, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 275, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/buncha/miniforge3/lib/python3.13/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 82, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 302.00 MiB. GPU 0 has a total capacity of 11.62 GiB of which 308.62 MiB is free. Including non-PyTorch memory, this process has 11.23 GiB memory in use. Of the allocated memory 10.54 GiB is allocated by PyTorch, and 571.21 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+Bỏ qua 32 câu đã trả lời, còn 1968
+Câu hỏi: 1968 (start_id=1)
+Dùng cache retrieve: 1968 câu
+=== Phase 2: Generate answers ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.19s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.12it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.07it/s]
+  Generated 8/1968
+  Generated 16/1968
+  Generated 24/1968
+  Generated 32/1968
+  Generated 40/1968
+  Generated 48/1968
+  Generated 56/1968
+  Generated 64/1968
+  Generated 72/1968
+  Generated 80/1968
+  Generated 88/1968
+  Generated 96/1968
+  Generated 104/1968
+  Generated 112/1968
+  Generated 120/1968
+  Generated 128/1968
+  Generated 136/1968
+  Generated 144/1968
+  Generated 152/1968
+  Generated 160/1968
+  Generated 168/1968
+  Generated 176/1968
+  Generated 184/1968
+  Generated 192/1968
+  Generated 200/1968
+  Generated 208/1968
+  Generated 216/1968
+  Generated 224/1968
+  Generated 232/1968
+  Generated 240/1968
+  Generated 248/1968
+  Generated 256/1968
+  Generated 264/1968
+  Generated 272/1968
+  Generated 280/1968
+  Generated 288/1968
+  Generated 296/1968
+  Generated 304/1968
+  Generated 312/1968
+  Generated 320/1968
+  Generated 328/1968
+  Generated 336/1968
+  Generated 344/1968
+  Generated 352/1968
+  Generated 360/1968
+  Generated 368/1968
+  Generated 376/1968
+  Generated 384/1968
+  Generated 392/1968
+  Generated 400/1968
+  Generated 408/1968
+  Generated 416/1968
+  Generated 424/1968
+  Generated 432/1968
+  Generated 440/1968
+  Generated 448/1968
+  Generated 456/1968
+  Generated 464/1968
+  Generated 472/1968
+  Generated 480/1968
+  Generated 488/1968
+  Generated 496/1968
+  Generated 504/1968
+  Generated 512/1968
+  Generated 520/1968
+  Generated 528/1968
+  Generated 536/1968
+  Generated 544/1968
+  Generated 552/1968
+  Generated 560/1968
+  Generated 568/1968
+  Generated 576/1968
+  Generated 584/1968
+  Generated 592/1968
+  Generated 600/1968
+  Generated 608/1968
+  Generated 616/1968
+  Generated 624/1968
+  Generated 632/1968
+  Generated 640/1968
+  Generated 648/1968
+  Generated 656/1968
+  Generated 664/1968
+  Generated 672/1968
+  Generated 680/1968
+  Generated 688/1968
+  Generated 696/1968
+  Generated 704/1968
+  Generated 712/1968
+  Generated 720/1968
+  Generated 728/1968
+  Generated 736/1968
+  Generated 744/1968
+  Generated 752/1968
+  Generated 760/1968
+  Generated 768/1968
+  Generated 776/1968
+  Generated 784/1968
+  Generated 792/1968
+  Generated 800/1968
+  Generated 808/1968
+  Generated 816/1968
+  Generated 824/1968
+  Generated 832/1968
+  Generated 840/1968
+  Generated 848/1968
+  Generated 856/1968
+  Generated 864/1968
+  Generated 872/1968
+  Generated 880/1968
+  Generated 888/1968
+  Generated 896/1968
+  Generated 904/1968
+  Generated 912/1968
+  Generated 920/1968
+  Generated 928/1968
+  Generated 936/1968
+  Generated 944/1968
+  Generated 952/1968
+  Generated 960/1968
+  Generated 968/1968
+  Generated 976/1968
+  Generated 984/1968
+  Generated 992/1968
+  Generated 1000/1968
+  Generated 1008/1968
+  Generated 1016/1968
+  Generated 1024/1968
+  Generated 1032/1968
+  Generated 1040/1968
+  Generated 1048/1968
+  Generated 1056/1968
+  Generated 1064/1968
+  Generated 1072/1968
+  Generated 1080/1968
+  Generated 1088/1968
+  Generated 1096/1968
+  Generated 1104/1968
+  Generated 1112/1968
+  Generated 1120/1968
+  Generated 1128/1968
+  Generated 1136/1968
+  Generated 1144/1968
+  Generated 1152/1968
+  Generated 1160/1968
+  Generated 1168/1968
+  Generated 1176/1968
+  Generated 1184/1968
+  Generated 1192/1968
+  Generated 1200/1968
+  Generated 1208/1968
+  Generated 1216/1968
+  Generated 1224/1968
+  Generated 1232/1968
+  Generated 1240/1968
+  Generated 1248/1968
+  Generated 1256/1968
+  Generated 1264/1968
+  Generated 1272/1968
+  Generated 1280/1968
+  Generated 1288/1968
+  Generated 1296/1968
+  Generated 1304/1968
+  Generated 1312/1968
+  Generated 1320/1968
+  Generated 1328/1968
+  Generated 1336/1968
+  Generated 1344/1968
+  Generated 1352/1968
+  Generated 1360/1968
+  Generated 1368/1968
+  Generated 1376/1968
+  Generated 1384/1968
+  Generated 1392/1968
+  Generated 1400/1968
+  Generated 1408/1968
+  Generated 1416/1968
+  Generated 1424/1968
+  Generated 1432/1968
+  Generated 1440/1968
+  Generated 1448/1968
+  Generated 1456/1968
+  Generated 1464/1968
+  Generated 1472/1968
+  Generated 1480/1968
+  Generated 1488/1968
+  Generated 1496/1968
+  Generated 1504/1968
+  Generated 1512/1968
+  Generated 1520/1968
+  Generated 1528/1968
+  Generated 1536/1968
+  Generated 1544/1968
+  Generated 1552/1968
+  Generated 1560/1968
+  Generated 1568/1968
+  Generated 1576/1968
+  Generated 1584/1968
+  Generated 1592/1968
+  Generated 1600/1968
+  Generated 1608/1968
+  Generated 1616/1968
+  Generated 1624/1968
+  Generated 1632/1968
+  Generated 1640/1968
+  Generated 1648/1968
+  Generated 1656/1968
+  Generated 1664/1968
+  Generated 1672/1968
+  Generated 1680/1968
+  Generated 1688/1968
+  Generated 1696/1968
+  Generated 1704/1968
+  Generated 1712/1968
+  Generated 1720/1968
+  Generated 1728/1968
+  Generated 1736/1968
+  Generated 1744/1968
+  Generated 1752/1968
+  Generated 1760/1968
+  Generated 1768/1968
+  Generated 1776/1968
+  Generated 1784/1968
+  Generated 1792/1968
+  Generated 1800/1968
+  Generated 1808/1968
+  Generated 1816/1968
+  Generated 1824/1968
+  Generated 1832/1968
+  Generated 1840/1968
+  Generated 1848/1968
+  Generated 1856/1968
+  Generated 1864/1968
+  Generated 1872/1968
+  Generated 1880/1968
+  Generated 1888/1968
+  Generated 1896/1968
+  Generated 1904/1968
+  Generated 1912/1968
+  Generated 1920/1968
+  Generated 1928/1968
+  Generated 1936/1968
+  Generated 1944/1968
+  Generated 1952/1968
+  Generated 1960/1968
+  Generated 1968/1968
+Đã lưu: test/R2AIStage1_answers.json (2000 câu, 10233.0s)

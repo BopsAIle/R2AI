@@ -1,0 +1,530 @@
+Request body search:
+  {"pageNumber": <trang>, "pageSize": 100, "keyword": "Kinh doanh"}
+Tổng khớp keyword: 53376 văn bản (~534 trang)
+Lọc tên văn bản: phải chứa "Kinh doanh"
+Tổng số văn bản khớp: 53376
+Crawl trang 1 đến 534, mỗi trang 100 văn bản
+Chỉ lưu văn bản có "Kinh doanh" trong tên
+Lưu file docx vào: output/kinh-doanh-title-docx
+
+=== Trang 1/534 (100 văn bản) ===
+[trang 1 - 25/100] 169027 - Luật Kinh doanh bất động sản số 29/2023/QH15
+[trang 1 - 54/100] 187830 - Nghị định số 116/2026/NĐ-CP Sửa đổi, bổ sung một số điều của các Nghị định có quy định thủ tục hành chính liên quan đến hoạt động sản xuất, kinh doanh thuộc phạm vi quản lý của Bộ Văn hóa, Thể thao và Du lịch.
+[trang 1 - 57/100] f37d3350-59b4-11f1-a2ed-af5d97394f48 - Nghị định 97/2026/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 46/2023/NĐ-CP ngày 01 tháng 7 năm 2023 của Chính phủ quy định chi tiết thi hành một số điều của Luật Kinh doanh bảo hiểm
+[trang 1 - 60/100] b6f03540-6003-11f1-85cf-f311a9784f2d - Nghị định 86/2026/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 121/2021/NĐ-CP ngày 27 tháng 12 năm 2021 về kinh doanh trò chơi điện tử có thưởng dành cho người nước ngoài
+[trang 1 - 62/100] 5c7780a0-6003-11f1-83a3-3b6c5bb4597a - Nghị định 78/2026/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 174/2024/NĐ-CP ngày 30 tháng 12 năm 2024 của Chính phủ quy định về xử phạt vi phạm hành chính trong lĩnh vực kinh doanh bảo hiểm
+[trang 1 - 66/100] 187582 - Nghị định số 18/2026/NĐ-CP Sửa đổi, bổ sung một số nghị định để cắt giảm, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh thuộc phạm vi quản lý của Bộ Tư pháp
+[trang 1 - 88/100] 174937 - Nghị định số 174/2024/NĐ-CP Quy định về xử phạt vi phạm hành chính trong lĩnh vực kinh doanh bảo hiểm
+[trang 1 - 98/100] 163441 - Nghị định số 46/2023/NĐ-CP Quy định chi tiết thi hành một số điều của Luật Kinh doanh bảo hiểm
+
+=== Trang 2/534 (100 văn bản) ===
+[trang 2 - 1/100] 152897 - Nghị định số 17/2022/NĐ-CP quy định về xử phạt vi phạm hành chính trong lĩnh vực hóa chất và vật liệu nổ công nghiệp; điện lực, an toàn đập thủy điện, sử dụng năng lượng tiết kiệm và hiệu quả; hoạt động thương mại, sản xuất, buôn bán hàng giả, hàng cấm và bảo vệ quyền lợi người tiêu dùng; hoạt động dầu khí, kinh doanh xăng dầu và khí
+[trang 2 - 4/100] 152528 - Nghị định số 121/2021/NĐ-CP Về kinh doanh trò chơi điện tử có thưởng dành cho người nước ngoài
+[trang 2 - 5/100] 152525 - Nghị định số 102/2021/NĐ-CP Sửa đổi, bổ sung một số điều của các Nghị định về xử phạt vi phạm hành chính trong lĩnh vực thuế, hóa đơn; hải quan; kinh doanh bảo hiểm, kinh doanh xổ số; quản lý, sử dụng tài sản công; thực hành tiết kiệm, chống lãng phí; dự trữ quốc gia; kho bạc nhà nước; kế toán, kiểm toán độc lập
+[trang 2 - 17/100] 131493 - Nghị định số 140/2018/NĐ-CP Sửa đổi, bổ sung các Nghị định liên quan đến điều kiện đầu tư kinh doanh và thủ tục hành chính thuộc phạm vi quản lý nhà nước của Bộ Lao động - Thương binh và Xã hội
+[trang 2 - 52/100] 8151f030-59a6-11f1-b005-252905659b22 - Thông tư 32/2026/TT-BTC Hướng dẫn thuế giá trị gia tăng, thuế thu nhập doanh nghiệp và thuế thu nhập cá nhân đối với giao dịch, chuyển nhượng, kinh doanh tài sản mã hóa
+[trang 2 - 59/100] c640e240-6005-11f1-bfbb-e599dc202167 - Thông tư 18/2026/TT-BTC Quy định về hồ sơ, thủ tục quản lý thuế đối với hộ kinh doanh, cá nhân kinh doanh
+[trang 2 - 66/100] 130794f0-5e73-11f1-9f61-df0d854978d6 - Thông tư 152/2025/TT-BTC Hướng dẫn kế toán cho các hộ kinh doanh, cá nhân kinh doanh
+[trang 2 - 68/100] 186185 - Thông tư số 58/2025/TT-BKHCN Sửa đổi, bổ sung một số Thông tư để cắt giảm, đơn giản hoá thủ tục hành chính liên quan đến hoạt động sản xuất, kinh doanh thuộc phạm vi quản lý của Bộ Khoa học và Công nghệ
+[trang 2 - 74/100] abace830-5e56-11f1-89e4-655ee264bb74 - Thông tư 110/2025/TT-BTC Quy định mức thu, chế độ thu, nộp phí thẩm định cấp giấy phép kinh doanh karaoke, vũ trường
+[trang 2 - 85/100] 176315 - Thông tư số 18/2025/TT-BCT Sửa đổi, bổ sung, bãi bỏ một số quy định 
+tại các Thông tư quy định về kinh doanh xăng dầu
+[trang 2 - 97/100] 164638 - Thông tư số 43/2023/TT-BCT sửa đổi, bổ sung một số điều của Thông tư số 57/2018/TT-BCT ngày 26 tháng 12 năm 2018 của Bộ Công Thương quy định chi tiết một số điều của các Nghị định liên quan đến kinh doanh thuốc lá
+
+=== Trang 3/534 (100 văn bản) ===
+[trang 3 - 13/100] 133903 - Thông tư số 57/2018/TT-BCT Quy định chi tiết một số điều của các Nghị định liên quan đến kinh doanh thuốc lá
+[trang 3 - 26/100] 37382 - Thông tư số 38/2014/TT-BCT Quy định chi tiết một số điều của Nghị định số 83/2014/NĐ-CP ngày 03 tháng 9 năm 2014 của Chính phủ về kinh doanh xăng dầu
+[trang 3 - 31/100] 46348 - Thông tư số 103/2014/TT-BTC Hướng dẫn thực hiện nghĩa vụ thuế áp dụng đối với tổ chức, cá nhân nước ngoài kinh doanh tại Việt Nam hoặc có thu nhập tại Việt Nam
+[trang 3 - 33/100] 45945 - Thông tư số 22/2013/TT-BKHCN Quy định về quản lý đo lường trong kinh doanh vàng và quản lý 
+chất lượng vàng trang sức, mỹ nghệ lưu thông trên thị trường
+[trang 3 - 39/100] 160627 - Quyết định số 17/2023/QĐ-TTg Sửa đổi, bổ sung một số điều của Quyết định số 31/2007/QĐ-TTg ngày 05 tháng 3 năm 2007 của Thủ tướng Chính phủ về tín dụng đối với hộ gia đình sản xuất, kinh doanh tại vùng khó khăn và Quyết định số 92/2009/QĐ-TTg ngày 08 tháng 7 năm 2009 của Thủ tướng Chính phủ về tín dụng đối với thương nhân hoạt động thương mại tại vùng khó khăn
+[trang 3 - 42/100] 14342 - Quyết định số 31/2007/QĐ-TTg Về tín dụng đối với hộ gia đình sản xuất, kinh doanh tại vùng khó khăn
+[trang 3 - 58/100] 9649ed10-5d9a-11f1-9bfa-bbc641793d9e - Quyết định 1562/QĐ-UBND Bãi bỏ toàn bộ Quyết định số 02/2021/QĐ-UBND ngày 05/02/2021 của UBND tỉnh về việc Ban hành Quy chế và hoạt động của Đoàn kiểm tra liên ngành về phòng, chống tệ nạn mại dâm; kinh doanh dịch vụ karaoke, dịch vụ vũ trường trên địa bàn tỉnh Thanh Hóa
+[trang 3 - 65/100] 0fc02970-5b02-11f1-938f-43cadfa70e33 - Quyết định 70/2026/QĐ-UBND Quy định mức hỗ trợ bằng hình thức đào tạo, chuyển đổi nghề và tìm kiếm việc làm cho người có đất thu hồi là đất nông nghiệp, đất ở kết hợp kinh doanh dịch vụ trên địa bàn tỉnh Gia Lai
+
+=== Trang 4/534 (100 văn bản) ===
+[trang 4 - 23/100] 9b1405f0-5e63-11f1-8eb2-75368a3d346c - Quyết định 1654/QĐ-UBND Ban hành giá cụ thể dịch vụ thu gom, vận chuyển, xử lý chất thải rắn sinh hoạt đối với cơ quan, tổ chức, cơ sở sản xuất kinh doanh, dịch vụ, khu sản xuất, kinh doanh, dịch vụ tập trung, cụm công nghiệp, hộ gia đình, cá nhân trên địa bàn thành phố Hải Phòng
+[trang 4 - 27/100] ea60a780-42b6-11f1-931b-279b9a8ddfb9 - Quyết định 30/2026/QĐ-UBND Ban hành Quy định quản lý hoạt động kinh doanh du lịch bằng tàu biển quốc tế tại các cảng biển trên địa bàn thành phố Huế
+[trang 4 - 100/100] 178610 - Quyết định số 74/2025/QĐ-UBND Sửa đổi, bổ sung một số điều của Quy chế phối hợp giữa các cơ quan chức năng trên địa bàn Thành phố Hồ Chí Minh trong quản lý nhà nước đối với doanh nghiệp, liên hiệp hợp tác xã, hợp tác xã, hộ kinh doanh sau đăng ký thành lập ban hành kèm theo Quyết định số 02/2024/QĐ-UBND ngày 10 tháng 01 năm 2024 của Ủy ban nhân dân Thành phố Hồ Chí Minh
+
+=== Trang 5/534 (100 văn bản) ===
+[trang 5 - 100/100] 171454 - Quyết định số 42/2024/QĐ-UBND Quy định mức hỗ trợ, hình thức đào tạo, chuyển đổi nghề và giải quyết việc làm cho người có đất thu hồi là đất nông nghiệp, đất ở kết hợp kinh doanh dịch vụ trên địa bàn tỉnh Bạc Liêu
+
+=== Trang 6/534 (100 văn bản) ===
+[trang 6 - 20/100] 169533 - Quyết định số 54/2024/QĐ-UBND Sửa đổi, bổ sung một số điều của Quy định quản lý hoạt động kinh doanh du lịch tàu biển quốc tế tại các cảng biển tỉnh Thừa Thiên Huế ban hành kèm theo Quyết định số 23/2018/QĐ-UBND ngày 09/4/2018 củaỦy ban nhân dân tỉnh Thừa Thiên Huế
+[trang 6 - 48/100] 165943 - Quyết định số 02/2024/QĐ-UBND Ban hành Quy chế phối hợp giữa các cơ quan chức năng trên địa bàn Thành phố Hồ Chí Minh trong quản lý nhà nước đối với doanh nghiệp, liên hiệp hợp tác xã, hợp tác xã, hộ kinh doanh sau đăng ký thành lập
+
+=== Trang 7/534 (100 văn bản) ===
+[trang 7 - 22/100] 147392 - Quyết định số 15/2021/QĐ-UBND Bãi bỏ Quyết định số 82/2019/QĐ-UBND ngày 31/12/2019 của Ủy ban nhân dân tỉnh Bình Định ban hành Quy định quản lý thu thuế đối với hoạt động kinh doanh vận tải trên địa bàn tỉnh Bình Định
+[trang 7 - 26/100] 149582 - Quyết định số 02/2021/QĐ-UBND Ban hành Quy chế tổ chức và hoạt động của Đoàn kiểm tra liên ngành về phòng, chống tệ nạn mại dâm; kinh doanh dịch vụ karaoke, dịch vụ vũ trường trên địa bàn tỉnh Thanh Hóa
+[trang 7 - 34/100] 145272 - Quyết định số 55/2020/QĐ-UBND Ban hành Quy chế phối hợp giữa các cơ quan chức năng trong quản lý nhà nước đối với doanh nghiệp, hợp tác xã, hộ kinh doanh sau đăng ký thành lập trên địa bàn tỉnh Đồng Nai
+[trang 7 - 45/100] 144426 - Quyết định số 26/2020/QĐ-UBND Quy định tài sản có giá trị lớn trong trường hợp sử dụng tài sản công vào mục đích kinh doanh, cho thuê tại các đơn vị sự nghiệp công lập thuộc phạm vi quản lý của tỉnh Hậu Giang
+[trang 7 - 55/100] 143617 - Quyết định số 23/2020/QĐ-UBND Quy định tài sản có giá trị lớn trong trường hợp sử dụng tài sản công vào mục đích kinh doanh, cho thuê
+[trang 7 - 59/100] 141120 - Quyết định số 04/2020/QĐ-UBND Quy định tài sản có giá trị lớn sử dụng vào mục đích kinh doanh, cho thuê tại các đơn vị sự nghiệp công lập thuộc phạm vi quản lý của tỉnh Phú Thọ
+[trang 7 - 61/100] 140338 - Quyết định số 41/2019/QĐ-UBND Quy định tài sản khác có giá trị lớn trong trường hợp sử dụng tài sản công vào mục đích kinh doanh, cho thuê tại các đơn vị sự nghiệp công lập thuộc phạm vi quản lý của tỉnh Bắc Kạn
+[trang 7 - 100/100] 128532 - Quyết định số 23/2018/QĐ-UBND Quản lý về hoạt động kinh doanh du lịch bằng tàu biển quốc tế tại các cảng biển Thừa Thiên Huế
+
+=== Trang 8/534 (100 văn bản) ===
+[trang 8 - 13/100] 122597 - Quyết định số 15/2017/QĐ-UBND Quy định mức giá tối đa dịch vụ sử dụng cầu đường bộ do địa phương quản lý các dự án đầu tư xây dựng cầu đường bộ để kinh doanh trên địa bàn tỉnh Cà Mau
+[trang 8 - 22/100] 117027 - Quyết định số 73/2016/QĐ-UBND Ban hành quy định phân cấp cấp Giấy chứng nhận đủ điều kiện kinh doanh khí dầu mỏ hóa lỏng (LPG) cho cửa hàng bàn LPG chai trên địa bàn tỉnh Đồng Nai
+[trang 8 - 39/100] 94039 - Quyết định số 69/2014/QĐ-UBND Quy định mức thu, sử dụng lệ phí đăng ký kinh doanh và cung cấp thông tin về đăng ký kinh doanh đối với hợp tác xã, Liên hiệp hợp tác xã, Quỹ tín dụng nhân dân trên địa bàn tỉnh Đồng Nai
+[trang 8 - 57/100] 83257 - Quyết định số 15/2012/QĐ-UBND Van hành Quy định trách nhiệm của người đứng đầu các cơ quan, đơn vị để xảy ra tình trạng khai thác, tập kết, vận chuyển, kinh doanh cát, sỏi lòng sông trái phép gây ảnh hưởng đến an toàn đê điều trên địa bàn tỉnh Bà Rịa – Vũng Tàu
+[trang 8 - 76/100] 50315 - Quyết định số 20/2009/QĐ-UBND Ban hành Quy chế về quản lý hoạt động kinh doanh dịch vụ du lịch tại các bãi biển trên địa bàn tỉnh Quảng Nam
+[trang 8 - 80/100] 82519 - Quyết định số 75/2008/QĐ-UBND Ban hành Quy định về đấu thầu kinh doanh, khai thác và quản lý chợ trên địa bàn tỉnh Đồng Nai
+[trang 8 - 82/100] 81705 - Quyết định số 09/2008/QĐ-UBND Về việc thu lệ phí cấp giấy chứng nhận đăng ký kinh doanh, cung cấp thông tin về đăng ký kinh doanh trên địa bàn tỉnh Đồng Nai
+[trang 8 - 91/100] 7c61efd0-5e6f-11f1-9238-47ade1790244 - Nghị quyết 24/2026/NQ-CP Cắt giảm, phân cấp, đơn giản hóa thủ tục hành chính, điều kiện kinh doanh lĩnh vực quốc phòng, nội vụ, tài chính, xây dựng, ngoại giao, tư pháp, ngân hàng
+[trang 8 - 93/100] 396a99b0-6000-11f1-bdd2-25abceea0660 - Nghị quyết 08/2025/NQ-CP Về việc cho phép người Việt Nam đủ điều kiện vào chơi casino tại một số dự án kinh doanh casino
+
+=== Trang 9/534 (100 văn bản) ===
+[trang 9 - 54/100] 155336 - Nghá» quyáº¿t sá» 10/2022/NQ-HÄND Quy Äá»nh chÃ­nh sÃ¡ch há» trá»£ cÃ¡c doanh nghiá»p kinh doanh du lá»ch trÃªn Äá»a bÃ n tá»nh BÃ¬nh Äá»nh tham gia há»i chá»£, triá»n lÃ£m du lá»ch trong nÆ°á»c vÃ  nÆ°á»c ngoÃ i
+
+=== Trang 10/534 (100 văn bản) ===
+[trang 10 - 57/100] 187047 - Luật sửa đổi, bổ sung một số điều của Luật Kinh doanh bảo hiểm số 139/2025/QH15
+[trang 10 - 95/100] 170509 - Luật Sửa đổi, bổ sung một số điều của Luật Đất đai số 31/2024/QH15, Luật Nhà ở số 27/2023/QH15, Luật Kinh doanh bất động sản số 29/2023/QH15 và Luật Các tổ chức tín dụng số 32/2024/QH15 số 43/2024/QH15
+
+=== Trang 11/534 (100 văn bản) ===
+[trang 11 - 21/100] 163515 - Luật Kinh doanh bảo hiểm số 08/2022/QH15
+[trang 11 - 48/100] 136041 - Luật sửa đổi, bổ sung một số điều của Luật kinh doanh bảo hiểm, Luật sở hữu trí tuệ số 42/2019/QH14
+[trang 11 - 84/100] 121546 - Luật Sửa đổi, bổ sung Điều 6 và Phụ lục 4 về Danh mục ngành, nghề đầu tư kinh doanh có điều kiện của Luật đầu tư số 03/2016/QH14
+
+=== Trang 12/534 (100 văn bản) ===
+[trang 12 - 6/100] 46790 - Luật Quản lý, sử dụng vốn nhà nước đầu tư vào sản xuất, kinh doanh tại doanh nghiệp số 69/2014/QH13
+[trang 12 - 9/100] 46749 - Luật Kinh doanh bất động sản số 66/2014/QH13
+[trang 12 - 66/100] 26357 - Luật Sửa đổi, bổ sung một số điều của Luật Kinh doanh bảo hiểm số 61/2010/QH12
+
+=== Trang 13/534 (100 văn bản) ===
+[trang 13 - 23/100] 15080 - Luật Kinh doanh bất động sản số 63/2006/QH11
+[trang 13 - 86/100] 5748 - Luật Kinh doanh bảo hiểm số 24/2000/QH10
+
+=== Trang 14/534 (100 văn bản) ===
+
+=== Trang 15/534 (100 văn bản) ===
+[trang 15 - 73/100] 3868 - Pháp lệnh số 7-LCT/HĐNN7 Trừng trị các tội đầu cơ, buôn lậu, làm hàng giả, kinh doanh trái phép
+[trang 15 - 76/100] 187800 - Nghị định số 137/2026/NĐ-CP Về quản lý hoạt động kinh doanh theo phương thức đa cấp
+[trang 15 - 79/100] 187816 - Nghị định số 117/2026/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 116/2017/NĐ-CP ngày 17 tháng 10 năm 2017 của Chính phủ quy định điều kiện sản xuất, lắp ráp, nhập khẩu và kinh doanh dịch vụ bảo hành, bảo dưỡng ô tô
+[trang 15 - 93/100] fa058c70-4c23-11f1-89aa-39e28af66afb - Nghị định 58/2026/NĐ-CP Sửa đổi, bổ sung một số điều của các nghị định liên quan đến quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề đầu tư kinh doanh có điều kiện; quản lý và sử dụng con dấu; quản lý, sử dụng pháo; quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú, Luật Căn cước
+[trang 15 - 96/100] 186852 - Nghị định số 54/2026/NĐ-CP Sửa đổi, bổ sung một số điều của các Nghị định trong lĩnh vực nhà ở, kinh doanh bất động sản
+
+=== Trang 16/534 (100 văn bản) ===
+[trang 16 - 14/100] 186425 - Nghị định số 14/2026/NĐ-CP Sửa đổi, bổ sung một số điều của các Nghị định để cắt giảm, đơn giản hóa thủ tục hành chính liên quan đến hoạt động sản xuất, kinh doanh thuộc phạm vi quản lý của Bộ Xây dựng
+[trang 16 - 59/100] 183843 - Nghị định số 297/2025/NĐ-CP Quy định thực hiện liên thông điện tử nhóm thủ tục hành chính: 
+Đăng ký thành lập hộ kinh doanh -  cấp Giấy chứng nhận đủ điều kiện về an ninh, trật tự - cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke
+[trang 16 - 89/100] 182776 - Nghị định số 246/2025/NĐ-CP Sửa đổi, bổ sung Nghị định số 68/2015/NĐ-CP ngày 18 tháng 8 năm 2015 của Chính phủ quy định đăng ký quốc tịch và đăng ký các quyền đối với tàu bay đã được sửa đổi, bổ sung bởi Nghị định số 64/2022/NĐ-CP ngày 15 tháng 9 năm 2022 của Chính phủ sửa đổi, bổ sung một số điều của các nghị định quy định liên quan đến hoạt động kinh doanh trong lĩnh vực hàng không dân dụng
+[trang 16 - 97/100] 181692 - NGHỊ ĐỊNH SỐ 232/2025/NĐ-CP SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA NGHỊ ĐỊNH SỐ 24/2012/NĐ-CP NGÀY 03 THÁNG 4 NĂM 2012 CỦA CHÍNH PHỦ VỀ QUẢN LÝ HOẠT ĐỘNG KINH DOANH VÀNG
+
+=== Trang 17/534 (100 văn bản) ===
+[trang 17 - 70/100] 178299 - Nghị định số 117/2025/NĐ-CP Quy định quản lý thuế đối với hoạt động kinh doanh trên nền tảng thương mại điện tử, nền tảng số của hộ, cá nhân
+[trang 17 - 81/100] 177441 - Nghị định số 100/2025/NĐ-CP Sửa đổi, bổ sung Nghị định số 56/2025/NĐ-CP ngày 03 tháng 3 năm 2025 của Chính phủ quy định chi tiết một số điều của Luật Điện lực về quy hoạch phát triển điện lực, phương án phát triển mạng lưới cấp điện, đầu tư xây dựng dự án điện lực và đấu thầu lựa chọn nhà đầu tư dự án kinh doanh điện lực
+[trang 17 - 87/100] 177046 - Nghị định số 89/2025/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định  số 92/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của Chính phủ quy định về các ngành, nghề kinh doanh có điều kiện trong lĩnh vực hàng không dân dụng
+
+=== Trang 18/534 (100 văn bản) ===
+[trang 18 - 5/100] 175749 - Nghị định số 56/2025/NĐ-CP quy định chi tiết một số điều của Luật Điện lực về quy hoạch phát triển điện lực, phương án phát triển mạng lưới cấp điện, đầu tư xây dựng dự án điện lực và đấu thầu lựa chọn nhà đầu tư dự án kinh doanh điện lực
+[trang 18 - 21/100] 175459 - Nghị định số 31/2025/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 32/2012/NĐ-CP ngày 12 tháng 4 năm 2012 của Chính phủ về quản lý xuất khẩu, nhập khẩu văn hóa phẩm không nhằm mục đích kinh doanh
+[trang 18 - 25/100] 175419 - Nghị định số 24/2025/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 98/2020/NĐ-CP ngày 26 tháng 8 năm 2020 của Chính phủ quy định xử phạt vi phạm hành chính trong hoạt động thương mại, sản xuất, buôn bán hàng giả, hàng cấm và bảo vệ quyền lợi người tiêu dùng đã được sửa đổi, bổ sung một số điều theo quy định tại Nghị định số 17/2022/NĐ-CP ngày 31 tháng 01 năm 2022 của Chính phủ sửa đổi, bổ sung một số điều của các Nghị định quy định về xử phạt vi phạm hành chính trong lĩnh vực hóa chất và vật liệu nổ công nghiệp; điện lực, an toàn đập thủy điện, sử dụng năng lượng tiết kiệm và hiệu quả; hoạt động thương mại, sản xuất, buôn bán hàng giả, hàng cấm và bảo vệ quyền lợi người tiêu dùng, hoạt động dầu khí, kinh doanh xăng dầu và khí
+[trang 18 - 43/100] 174969 - Nghị định số 173/2024/NĐ-CP bãi bỏ một phần Nghị định số 59/2006/NĐ-CP ngày 12 tháng 6 năm 2006 của Chính phủ quy định chi tiết Luật Thương mại về hàng hóa, dịch vụ cấm kinh doanh, hạn chế kinh doanh và kinh doanh có điều kiện (sau đây viết tắt là Nghị định 59/2006/NĐ-CP) và bãi bỏ Nghị định số 43/2009/NĐ-CP ngày 07 tháng 5 năm 2009 của Chính phủ sửa đổi, bổ sung Danh mục hàng hóa, dịch vụ cấm kinh doanh của Nghị định số 59/2006/NĐ-CP (sau đây viết tắt là Nghị định số 43/2009/NĐ-CP)
+[trang 18 - 45/100] 173910 - Nghị định số 166/2024/NĐ-CP Quy định về điều kiện kinh doanh dịch vụ kiểm định xe cơ giới; tổ chức, hoạt động của cơ sở đăng kiểm; niên hạn sử dụng của xe cơ giới
+[trang 18 - 60/100] 171628 - Nghị định số 148/2024/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 54/2019/NĐ-CP ngày 19 tháng 6 năm 2019 của Chính phủ quy định về kinh doanh dịch vụ karaoke, dịch vụ vũ trường
+[trang 18 - 62/100] 172743 - Nghị định số 145/2024/NĐ-CP sửa đổi khoản 2 Điều 12 của Nghị định số 03/2017/NĐ-CP ngày 16 tháng 01 năm 2017 của Chính phủ về kinh doanh casino
+[trang 18 - 70/100] 170839 - NGHỊ ĐỊNH SỐ 129/2024/NĐ-CP SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA NGHỊ ĐỊNH SỐ 91/2016/NĐ-CP NGÀY 01 THÁNG 7 NĂM 2016 CỦA CHÍNH PHỦ VỀ QUẢN LÝ HÓA CHẤT, CHẾ PHẨM DIỆT CÔN TRÙNG, DIỆT KHUẨN DÙNG TRONG LĨNH VỰC GIA DỤNG VÀ Y TẾ; NGHỊ ĐỊNH SỐ 155/2018/NĐ-CP NGÀY 12 THÁNG 11 NĂM 2018 CỦA CHÍNH PHỦ SỬA ĐỔI, BỔ SUNG MỘT SỐ QUY ĐỊNH LIÊN QUAN ĐẾN ĐIỀU KIỆN ĐẦU TƯ KINH DOANH THUỘC PHẠM VI QUẢN LÝ NHÀ NƯỚC CỦA BỘ Y TẾ
+[trang 18 - 77/100] 172770 - Nghị định số 121/2024/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 139/2018/NĐ-CP ngày 08 tháng 10 năm 2018 của Chính phủ quy định về kinh doanh dịch vụ kiểm định xe cơ giới, được sửa đổi, bổ sung một số điều tại Nghị định số 30/2023/NĐ-CP ngày 08 tháng 6 năm 2023 của Chính phủ
+[trang 18 - 87/100] 172735 - Nghị định số 108/2024/NĐ-CP Quy định về việc quản lý, sử dụng và khai thác nhà, đất là tài sản công không sử dụng vào mục đích để ở giao cho tổ chức có chức năng quản lý kinh doanh nhà địa phương quản lý, khai thác
+[trang 18 - 94/100] 169707 - Nghị định số 94/2024/NĐ-CP Quy định chi tiết một số điều của Luật Kinh doanh bất động sản về xây dựng và quản lý hệ thống thông tin, cơ sở dữ liệu về nhà ở và thị trường bất động sản
+[trang 18 - 95/100] 169708 - Nghị định số 96/2024/NĐ-CP Quy định chi tiết một số điều của Luật Kinh doanh bất động sản
+
+=== Trang 19/534 (100 văn bản) ===
+[trang 19 - 42/100] 167258 - Nghị định số 20/2024/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 05/2021/NĐ-CP ngày 25 tháng 01 năm 2021 của Chính phủ về quản lý, khai thác cảng hàng không, sân bay và Nghị định số 64/2022/NĐ-CP ngày 15 tháng 9 năm 2022 của Chính phủ sửa đổi, bổ sung một số điều của các Nghị định quy định liên quan đến hoạt động kinh doanh trong lĩnh vực hàng không dân dụng
+[trang 19 - 45/100] 167226 - Nghị định số 15/2024/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 30/2013/NĐ-CP ngày 08 tháng 4 năm 2013 của Chính phủ về kinh doanh vận chuyển hàng không và hoạt động hàng không chung và Nghị định số 92/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của Chính phủ quy định về các ngành, nghề kinh doanh có điều kiện trong lĩnh vực hàng không dân dụng
+[trang 19 - 60/100] 166458 - Nghị định số 88/2023/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 54/2017/NĐ-CP ngày 08 tháng 5 năm 2017 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Dược và Nghị định số 155/2018/NĐ-CP ngày 12 tháng 11 năm 2018 của Chính phủ sửa đổi, bổ sung một số quy định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Y tế.
+[trang 19 - 64/100] 164893 - Nghị định số 80/2023/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 95/2021/NĐ-CP ngày 01 tháng 11 năm 2021 và Nghị định số 83/2014/NĐ-CP ngày 03 tháng 9 năm 2014 của Chính phủ về kinh doanh xăng dầu
+[trang 19 - 78/100] 163098 - Nghị định số 56/2023/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 96/2016/NĐ-CP ngày 01 tháng 7 năm 2016 quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề đầu tư kinh doanh có điều kiện, Nghị định số 99/2016/NĐ-CP ngày 01 tháng 7 năm 2016 về quản lý và sử dụng con dấu, Nghị định số 137/2020/NĐ-CP ngày 27 tháng 11 năm 2020 quy định về quản lý, sử dụng pháo
+[trang 19 - 89/100] 160811 - Nghị định số 32/2023/NĐ-CP Sửa đổi, bổ sung Nghị định số 53/2018/NĐ-CP ngày 16 tháng 4 năm 2018 của Chính phủ sửa đổi, bổ sung Nghị định số 58/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của Chính phủ quy định chi tiết về kinh doanh sản phẩm, dịch vụ mật mã dân sự và xuất khẩu, nhập khẩu sản phẩm mật mã dân sự
+[trang 19 - 90/100] 164963 - Nghị định số 30/2023/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 139/2018/NĐ-CP  ngày 08 tháng 10 năm 2018 của Chính phủ quy định về kinh doanh dịch vụ kiểm định xe cơ giới
+[trang 19 - 97/100] 166741 - Nghị định số 22/2023/NĐ-CP (1) Sửa đổi, bổ sung một số điều của các Nghị định liên quan đến hoạt động kinh doanh 
+trong lính vực tài nguyên và môi trường
+
+=== Trang 20/534 (100 văn bản) ===
+[trang 20 - 1/100] 160211 - Nghị định số 18/2023/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 40/2018/NĐ-CP ngày 12 tháng 3 năm 2018 của Chính phủ về quản lý hoạt động kinh doanh theo phương thức đa cấp
+[trang 20 - 11/100] 159806 - Nghị định số 04/2023/NĐ-CP Sửa đổi, bổ sung một số điều của các Nghị định liên quan đến điều kiện đầu tư kinh doanh và thủ tục hành chính thuộc phạm vi quản lý nhà nước của Bộ Lao động - Thương binh và Xã hội
+[trang 20 - 24/100] 168601 - Nghị định số 101/2022/NĐ-CP quy định về điều kiện đầu tư kinh doanh quân trang, quân dụng, vũ khí quân dụng, trang thiết bị kỹ thuật và công nghệ chuyên dùng phục vụ quốc phòng, an ninh
+[trang 20 - 40/100] 157020 - Nghị định số 70/2022/NĐ-CP Sửa đổi, bổ sung một số điều của các Nghị định quy định liên quan đến hoạt động kinh doanh trong lĩnh vực đường bộ
+[trang 20 - 41/100] 156356 - Nghị định số 69/2022/NĐ-CP Sửa đổi, bổ sung một số điều của các nghị định quy định liên quan đến hoạt động kinh doanh trong lĩnh vực hàng hải
+[trang 20 - 44/100] 155962 - Nghị định số 64/2022/NĐ-CP Sửa đổi, bổ sung một số điều của các Nghị định quy định liên quan đến hoạt động kinh doanh trong lĩnh vực hàng không dân dụng
+[trang 20 - 50/100] 155964 - Nghị định số 54/2022/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 78/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của Chính phủ quy định điều kiện kinh doanh dịch vụ đào tạo thuyền viên, người lái phương tiện thủy nội địa và Nghị định số 08/2021/NĐ-CP ngày 28 tháng 01 năm 2021 của Chính phủ quy định về quản lý hoạt động đường thủy nội địa
+[trang 20 - 55/100] 159161 - Nghị định số 47/2022/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 10/2020/NĐ-CP ngày 17 tháng 01 năm 2020 của Chính phủ quy định về kinh doanh và điều kiện kinh doanh vận tải bằng xe ô tô
+[trang 20 - 68/100] 154004 - NGHỊ ĐỊNH SỐ 31/2022/NĐ-CP VỀ HỖ TRỢ LÃI SUẤT TỪ NGÂN SÁCH NHÀ NƯỚC ĐỐI VỚI KHOẢN VAY CỦA DOANH NGHIỆP, HỢP TÁC XÃ, HỘ KINH DOANH
+[trang 20 - 74/100] 156486 - Nghị định số 22/2022/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 32/2012/NĐ-CP ngày 12 tháng 4 năm 2012 của Chính phủ về quản lý xuất khẩu, nhập khẩu văn hóa phẩm không nhằm mục đích kinh doanh
+[trang 20 - 87/100] 153773 - Nghị định số 02/2022/NĐ-CP quy định chi tiết thi hành một số điều của Luật Kinh doanh bất động sản
+[trang 20 - 92/100] 152530 - Nghị định số 137/2021/NĐ-CP Quy định xử phạt vi phạm hành chính trong lĩnh vực kinh doanh đặt cược và trò chơi có thưởng
+
+=== Trang 21/534 (100 văn bản) ===
+[trang 21 - 19/100] 150736 - Nghị định số 95/2021/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 83/2014/NĐ-CP ngày 03 tháng 9 năm 2014 của Chính phủ về kinh doanh xăng dầu
+[trang 21 - 20/100] 150719 - Nghị định số 94/2021/NĐ-CP sửa đổi, bổ sung Điều 14 của Nghị định số 168/2017/NĐ-CP ngày 31 tháng 12 năm 2017 của Chính phủ quy định chi tiết một số điều của Luật Du lịch về mức ký quỹ kinh doanh dịch vụ lữ hành.
+
+=== Trang 22/534 (100 văn bản) ===
+[trang 22 - 8/100] 143870 - Nghá» Äá»nh sá» 100/2020/NÄ-CP Vá» kinh doanh hÃ ng miá»n thuáº¿
+[trang 22 - 10/100] 143872 - Nghị định số 99/2020/NĐ-CP Quy định xử phạt vi phạm hành chính trong lĩnh vực dầu khí, kinh doanh xăng dầu và khí
+[trang 22 - 23/100] 142826 - Nghá» Äá»nh sá» 67/2020/NÄ-CP Sá»­a Äá»i, bá» sung má»t sá» Äiá»u cá»§a Nghá» Äá»nh sá» 68/2016/NÄ-CP ngÃ y 01 thÃ¡ng 7 nÄm 2016 cá»§a ChÃ­nh phá»§ quy Äá»nh vá» Äiá»u kiá»n kinh doanh hÃ ng miá»n thuáº¿, kho bÃ£i, Äá»a Äiá»m lÃ m thá»§ tá»¥c háº£i quan, táº­p káº¿t, kiá»m tra, giÃ¡m sÃ¡t háº£i quan
+[trang 22 - 29/100] 141962 - Nghị định số 52/2020/NĐ-CP Về đầu tư xây dựng và kinh doanh sân gôn
+[trang 22 - 52/100] 140941 - Nghị định số 21/2020/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 139/2017/NĐ-CP ngày 27 tháng 11 năm 2017 của Chính phủ quy định xử phạt vi phạm hành chính trong hoạt động đầu tư xây dựng; khai thác, chế biến, kinh doanh khoáng sản làm vật liệu xây dựng, sản xuất, kinh doanh vật liệu xây dựng; quản lý công trình hạ tầng kỹ thuật; kinh doanh bất động sản, phát triển nhà ở, quản lý sử dụng nhà và công sở
+[trang 22 - 54/100] 140944 - Nghị định số 17/2020/NĐ-CP Sửa đổi, bổ sung một số điều của các Nghị định liên quan đến điều kiện đầu tư kinh doanh thuộc lĩnh vực quản lý nhà nước của Bộ Công Thương
+[trang 22 - 58/100] 140555 - Nghị định số 10/2020/NĐ-CP Quy định về kinh doanh và điều kiện kinh doanh vận tải bằng xe ô tô
+[trang 22 - 70/100] 139095 - Nghị định số 89/2019/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 92/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của Chính phủ quy định về các ngành, nghề kinh doanh có điều kiện trong lĩnh vực hàng không dân dụng và Nghị định số 30/2013/NĐ-CP ngày 08 tháng 4 năm 2013 của Chính phủ về kinh doanh vận chuyển hàng không và hoạt động hàng không chung
+[trang 22 - 77/100] 138992 - Nghị định số 80/2019/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 73/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của Chính phủ quy định chi tiết thi hành Luật Kinh doanh bảo hiểm và Luật sửa đổi, bổ sung một số điều của Luật Kinh doanh bảo hiểm; Nghị định số 98/2013/NĐ-CP ngày 28 tháng 8 năm 2013 của Chính phủ quy định về xử phạt vi phạm hành chính trong lĩnh vực kinh doanh bảo hiểm, kinh doanh xổ số đã được sửa đổi, bổ sung một số điều theo Nghị định số 48/2018/NĐ-CP ngày 21 tháng 3 năm 2018 của Chính phủ
+[trang 22 - 90/100] 135886 - Nghị định số 54/2019/NĐ-CP Quy định về kinh doanh dịch vụ karaoke, dịch vụ vũ trường
+[trang 22 - 91/100] 135885 - Nghị định số 54/2019/NĐ-CP Quy định về kinh doanh dịch vụ karaoke, dịch vụ vũ trường
+
+=== Trang 23/534 (100 văn bản) ===
+[trang 23 - 8/100] 134064 - Nghị định số 16/2019/NĐ-CP Sửa đổi, bổ sung một số điều của các Nghị định quy định về điều kiện kinh doanh thuộc phạm vi quản lý nhà nước của Ngân hàng Nhà nước Việt Nam
+[trang 23 - 24/100] 132181 - Nghị định số 155/2018/NĐ-CP Sửa đổi, bổ sung một số quy định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Y tế
+[trang 23 - 25/100] 132179 - Nghị định số 154/2018/NĐ-CP Sửa đổi, bổ sung, bãi bỏ một số quy định về điều kiện đầu tư, kinh doanh trong lĩnh vực quản lý nhà nước của Bộ Khoa học và Công nghệ và một số quy định về kiểm tra chuyên ngành
+[trang 23 - 26/100] 132170 - Nghị định số 150/2018/NĐ-CP Sửa đổi một số Nghị định liên quan đến điều kiện đầu tư kinh doanh và thủ tục hành chính trong lĩnh vực thông tin và truyền thông
+[trang 23 - 28/100] 132174 - Nghị định số 151/2018/NĐ-CP Sửa đổi, bổ sung một số Nghị định quy định về điều kiện đầu tư, kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Tài chính
+[trang 23 - 29/100] 132189 - Nghị định số 147/2018/NĐ-CP Sửa đổi, bổ sung một số điều của các Nghị định quy định về điều kiện kinh doanh trong lĩnh vực hàng hải
+[trang 23 - 34/100] 131609 - Nghị định số 142/2018/NĐ-CP sửa đổi một số quy định về điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Văn hóa, Thể thao và Du lịch.
+[trang 23 - 35/100] 136809 - Nghị định số 141/2018/NĐ-CP sửa đổi, bổ sung một số điều của các Nghị định quy định xử lý vi phạm pháp luật trong hoạt động kinh doanh theo phương thức đa cấp
+[trang 23 - 36/100] 132392 - Nghị định số 138/2018/NĐ-CP Sửa đổi, bổ sung một số điều Nghị định số 65/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của Chính phủ quy định về điều kiện kinh doanh dịch vụ đào tạo lái xe ô tô và dịch vụ sát hạch lái xe
+[trang 23 - 37/100] 132391 - Nghị định số 139/2018/NĐ-CP Quy định về kinh doanh dịch vụ kiểm định xe cơ giới
+[trang 23 - 38/100] 131575 - Nghị định số 136/2018/NĐ-CP Sửa đổi một số điều của các Nghị định liên quan đến điều kiện đầu tư kinh doanh thuộc lĩnh vực tài nguyên và môi trường
+[trang 23 - 43/100] 131473 - Nghị định số 128/2018/NĐ-CP Sửa đổi, bổ sung một số điều của các Nghị định quy định về điều kiện đầu tư, kinh doanh trong lĩnh vực đường thủy nội địa
+[trang 23 - 47/100] 132221 - NGHỊ ĐỊNH SỐ 123/2018/NĐ-CP SỬA ĐỔI, BỔ SUNG MỘT SỐ NGHỊ ĐỊNH QUY ĐỊNH VỀ ĐIỀU KIỆN ĐẦU TƯ, KINH DOANH TRONG LĨNH VỰC NÔNG NGHIỆP
+[trang 23 - 58/100] 130982 - Nghị định số 107/2018/NĐ-CP quy định về kinh doanh xuất khẩu gạo
+[trang 23 - 60/100] 130011 - Nghị định số 100/2018/NĐ-CP Sửa đổi, bổ sung, bãi bỏ một số quy định về điều kiện đầu tư kinh doanh thuộc các lĩnh vực quản lý nhà nước của Bộ Xây dựng
+[trang 23 - 67/100] 129477 - Nghị định số 87/2018/NĐ-CP Về kinh doanh khí
+[trang 23 - 93/100] 137224 - Nghị định số 53/2018/NĐ-CP Sửa đổi, bổ sung Nghị định số 58/2016/NĐ-CP ngày 01 tháng 7 năm 2016 của Chính phủ quy định chi tiết về kinh doanh sản phẩm, dịch vụ mật mã dân sự và xuất khẩu, nhập khẩu sản phẩm mật mã dân sự
+[trang 23 - 99/100] 128870 - Nghị định số 48/2018/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 98/2013/NĐ-CP ngày 28 tháng 8 năm 2013 của Chính phủ quy định về xử phạt vi phạm hành chính trong lĩnh vực kinh doanh bảo hiểm, kinh doanh xổ số.
+
+=== Trang 24/534 (100 văn bản) ===
+[trang 24 - 4/100] 128613 - Nghị định số 40/2018/NĐ-CP Về quản lý hoạt động kinh doanh theo phương thức đa cấp
+[trang 24 - 28/100] 127429 - Nghị định số 08/2018/NĐ-CP Sửa đổi một số Nghị định liên quan đến điều kiện đầu tư kinh doanh thuộc phạm vi quản lý nhà nước của Bộ Công Thương
+[trang 24 - 36/100] 131285 - Nghị định số 163/2017/NĐ-CP quy định về kinh doanh dịch vụ logistics
+[trang 24 - 38/100] 126678 - Nghị định số 148/2017/NĐ-CP Về Điều lệ tổ chức và hoạt động của Tổng công ty Đầu tư và Kinh doanh vốn nhà nước
+[trang 24 - 39/100] 126677 - Nghị định số 147/2017/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 151/2013/NĐ-CP ngày 01 tháng 11 năm 2013 của Chính phủ về chức năng, nhiệm vụ và cơ chế hoạt động của Tổng công ty Đầu tư và Kinh doanh vốn nhà nước
+[trang 24 - 43/100] 127370 - Nghị định số 139/2017/NĐ-CP Quy định xử phạt vi phạm hành chính trong hoạt động đầu tư xây dựng; khai thác, chế biến, kinh doanh khoáng sản làm vật liệu xây dựng, sản xuất, kinh doanh vật liệu xây dựng; quản lý công trình hạ tầng kỹ thuật; kinh doanh bất động sản, phát triển nhà ở, quản lý sử dụng nhà và công sở
+[trang 24 - 47/100] 125754 - Nghị định số 122/2017/NĐ-CP Quy định một số nội dung đặc thù về cơ chế quản lý tài chính và đánh giá hiệu quả hoạt động đối với doanh nghiệp kinh doanh xổ số; Sở Giao dịch Chứng khoán và Trung tâm Lưu ký Chứng khoán Việt Nam
+[trang 24 - 52/100] 127249 - Nghị định số 116/2017/NĐ-CP Quy định điều kiện sản xuất, lắp ráp, nhập khẩu và kinh doanh dịch vụ bảo hành, bảo dưỡng ô tô
+[trang 24 - 57/100] 124987 - Nghị định số 105/2017/NĐ-CP Về kinh doanh rượu
+[trang 24 - 58/100] 125822 - Nghị định số 106/2017/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 67/2013/NĐ-CP ngày 27 tháng 6 năm 2013 của Chính phủ quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá
+[trang 24 - 79/100] 121992 - Nghị định số 67/2017/NĐ-CP Quy định xử phạt vi phạm hành chính trong lĩnh vực dầu khí, kinh doanh xăng dầu và khí
+[trang 24 - 81/100] 123878 - Nghị định số 66/2017/NĐ-CP Quy định điều kiện kinh doanh thiết bị, phần mềm ngụy trang dùng để ghi âm, ghi hình, định vị
+[trang 24 - 96/100] 121990 - Nghị định số 40/2017/NĐ-CP Về quản lý sản xuất, kinh doanh muối
+[trang 24 - 100/100] 122534 - Nghị định số 37/2017/NĐ-CP Về điều kiện kinh doanh khai thác cảng biển
+
+=== Trang 25/534 (100 văn bản) ===
+[trang 25 - 17/100] 118309 - Nghị định số 06/2017/NĐ-CP Về kinh doanh đặt cược đua ngựa, đua chó và bóng đá quốc tế
+[trang 25 - 19/100] 118307 - Nghị định số 03/2017/NĐ-CP Về kinh doanh casino
+[trang 25 - 22/100] 117609 - Nghị định số 175/2016/NĐ-CP Sửa đổi, bổ sung một số điều quy định tại Nghị định số 86/2013/NĐ-CP ngày 29 tháng 7 năm 2013 của Chính phủ về kinh doanh trò chơi điện tử có thưởng dành cho người nước ngoài
+[trang 25 - 24/100] 118314 - Nghị định số 175/2016/NĐ-CP Sửa đổi, bổ sung một số điều quy định tại Nghị định số 86/2013/NĐ-CP ngày 29 tháng 7 năm 2013 của Chính phủ về kinh doanh trò chơi điện tử có thưởng dành cho người nước ngoài
+[trang 25 - 30/100] 118311 - Nghá» Äá»nh sá» 167/2016/NÄ-CP Vá» kinh doanh hÃ ng miá»n thuáº¿
+[trang 25 - 33/100] 118566 - Nghị định số 160/2016/NĐ-CP Về điều kiện kinh doanh vận tải biển, kinh doanh dịch vụ đại lý tàu biển và dịch vụ lai dắt tàu biển
+[trang 25 - 53/100] 113069 - Nghị định số 106/2016/NĐ-CP Quy định điều kiện kinh doanh hoạt động thể thao
+[trang 25 - 54/100] 112014 - Nghị định số 87/2016/NĐ-CP Quy định về điều kiện kinh doanh mũ bảo hiểm cho người đi mô tô, xe máy
+[trang 25 - 55/100] 113073 - Nghị định số 102/2016/NĐ-CP Quy định điều kiện kinh doanh thuốc
+[trang 25 - 56/100] 112029 - Nghị định số 78/2016/NĐ-CP Quy định điều kiện kinh doanh dịch vụ đào tạo thuyền viên, người lái phương tiện thủy nội địa
+[trang 25 - 61/100] 111124 - Nghị định số 63/2016/NĐ-CP Quy định về điều kiện kinh doanh dịch vụ kiểm định xe cơ giới
+[trang 25 - 62/100] 113067 - Nghị định số 111/2016/NĐ-CP Quy định điều kiện kinh doanh dịch vụ đóng mới, hoán cải, sửa chữa tàu biển
+[trang 25 - 63/100] 114803 - Nghị định số 107/2016/NĐ-CP Quy định về điều kiện kinh doanh dịch vụ đánh giá sự phù hợp
+[trang 25 - 66/100] 111050 - Nghị định số 60/2016/NĐ-CP Quy định một số điều kiện đầu tư kinh doanh trong lĩnh vực tài nguyên và môi trường
+[trang 25 - 67/100] 111590 - Nghị định số 69/2016/NĐ-CP Về điều kiện kinh doanh dịch vụ mua bán nợ
+[trang 25 - 68/100] 111032 - Nghị định số 58/2016/NĐ-CP Quy định chi tiết về kinh doanh sản phẩm, dịch vụ mật mã dân sự và xuất khẩu, nhập khẩu sản phẩm mật mã dân sự
+[trang 25 - 69/100] 111867 - Nghị định số 67/2016/NĐ-CP Quy định về điều kiện sản xuất, kinh doanh thực phẩm thuộc lĩnh vực quản lý chuyên ngành của Bộ Y tế
+[trang 25 - 72/100] 134504 - Nghị định số 772016/NĐ-C Sửa đổi, bổ sung một số quy định về điều kiện đầu tư kinh doanh trong lĩnh vực mua bán hàng hóa quốc tế, hóa chất, vật liệu nổ công nghiệp, phân bón, kinh doanh khí, kinh doanh thực phẩm thuộc phạm vi quản lý nhà nước của Bộ Công Thương
+[trang 25 - 73/100] 181645 - Nghị định số 77/2016/NĐ-CP Sửa đổi, bổ sung một số quy định về điều kiện đầu tư kinh doanh trong lĩnh vực mua bán hàng hóa quốc tế, hóa chất, vật liệu nổ công nghiệp, phân bón, kinh doanh khí, kinh doanh thực phẩm thuộc phạm vi quản lý nhà nước của Bộ Công Thương
+[trang 25 - 74/100] 111606 - Nghị định số 65/2016/NĐ-CP Quy định về điều kiện kinh doanh dịch vụ đào tạo lái xe ô tô và dịch vụ sát hạch lái xe
+[trang 25 - 75/100] 112026 - Nghị định số 86/2016/NĐ-CP Quy định điều kiện đầu tư, kinh doanh chứng khoán
+[trang 25 - 76/100] 111993 - Nghị định số 61/2016/NĐ-CP Quy định điều kiện kinh doanh giám định cổ vật và hành nghề bảo quản, tu bổ, phục hồi di tích lịch sử - văn hóa, danh lam thắng cảnh
+[trang 25 - 77/100] 112209 - Nghị định số 92/2016/NĐ-CP Quy định về các ngành, nghề kinh doanh có điều kiện trong lĩnh vực hàng không dân dụng
+[trang 25 - 78/100] 113068 - Nghị định số 108/2016/NĐ-CP Quy định chi tiết điều kiện kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng
+[trang 25 - 79/100] 111885 - Nghị định số 66/2016/NĐ-CP Quy định điều kiện đầu tư kinh doanh về bảo vệ và kiểm dịch thực vật; giống cây trồng; nuôi động vật rừng thông thường; chăn nuôi; thủy sản; thực phẩm
+[trang 25 - 81/100] 113088 - Nghị định số 96/2016/NĐ-CP Quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề đầu tư kinh doanh có điều kiện
+[trang 25 - 85/100] 112025 - Nghị định số 73/2016/NĐ-CP Quy định chi tiết thi hành Luật kinh doanh bảo hiểm và Luật sửa đổi, bổ sung một số điều của Luật kinh doanh bảo hiểm
+[trang 25 - 91/100] 111997 - Nghị định số 79/2016/NĐ-CP Quy định điều kiện kinh doanh dịch vụ đào tạo, bồi dưỡng kiến thức chuyên môn, nghiệp vụ quản lý vận hành nhà chung cư, kiến thức hành nghề môi giới bất động sản, điều hành sàn giao dịch bất động sản
+[trang 25 - 94/100] 112023 - Nghá» Äá»nh sá» 68/2016/NÄ-CP Quy Äá»nh vá» Äiá»u kiá»n kinh doanh hÃ ng miá»n thuáº¿, kho bÃ£i, Äá»a Äiá»m lÃ m thá»§ tá»¥c háº£i quan, táº­p káº¿t, kiá»m tra, giÃ¡m sÃ¡t háº£i quan
+
+=== Trang 26/534 (100 văn bản) ===
+[trang 26 - 16/100] 99847 - Nghị định số 19/2016/NĐ-CP Về kinh doanh khí
+[trang 26 - 18/100] 99296 - Nghá» Äá»nh sá» 15/2016/NÄ-CP Sá»­a Äá»i, bá» sung má»t sá» Äiá»u cá»§a Nghá» Äá»nh sá» 79/2012/NÄ-CP 
+ngÃ y 05 thÃ¡ng 10 nÄm 2012 cá»§a ChÃ­nh phá»§ quy Äá»nh vá» biá»u diá»n 
+nghá» thuáº­t, trÃ¬nh diá»n thá»i trang; thi ngÆ°á»i Äáº¹p vÃ  ngÆ°á»i máº«u; lÆ°u hÃ nh, 
+kinh doanh báº£n ghi Ã¢m, ghi hÃ¬nh ca mÃºa nháº¡c, sÃ¢n kháº¥u
+[trang 26 - 75/100] 80056 - Nghị định số 76/2015/NĐ-CP Quy định chi tiết thi hành một số điều của Luật Kinh doanh bất động sản
+
+=== Trang 27/534 (100 văn bản) ===
+[trang 27 - 35/100] 37830 - Nghị định số 110/2014/NĐ-CP Quy định điều kiện kinh doanh vận tải đường thủy nội địa
+[trang 27 - 40/100] 37636 - Nghị định số 100/2014/NĐ-CP Quy định về kinh doanh và sử dụng sản phẩm dinh dưỡng dùng cho trẻ nhỏ, bình bú và vú ngậm nhân tạo
+[trang 27 - 50/100] 37056 - Nghị định số 86/2014/NĐ-CP Về kinh doanh và điều kiện kinh doanh vận tải bằng xe ô tô
+[trang 27 - 52/100] 37012 - Nghị định số 83/2014/NĐ-CP Về kinh doanh xăng dầu
+[trang 27 - 61/100] 36771 - Nghị định số 68/2014/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 45/2007/NĐ-CP ngày 27 tháng 3 năm 2007 của Chính phủ quy định chi tiết thi hành một số điều của Luật Kinh doanh bảo hiểm
+[trang 27 - 67/100] 36549 - Nghị định số 57/2014/NĐ-CP Về Điều lệ tổ chức và hoạt động của Tổng công ty Đầu tư và Kinh doanh vốn nhà nước
+[trang 27 - 89/100] 34156 - Nghị định số 30/2014/NĐ-CP Về điều kiện kinh doanh vận tải biển và dịch vụ hỗ trợ vận tải biển
+
+=== Trang 28/534 (100 văn bản) ===
+[trang 28 - 24/100] 37752 - Nghị định số 194/2013/NĐ-CP Về việc đăng ký lại, chuyển đổi doanh nghiệp có vốn đầu tư nước ngoài và đổi Giấy phép đầu tư của dự án đầu tư theo hình thức hợp đồng hợp tác kinh doanh
+[trang 28 - 60/100] 32547 - Nghị định số 151/2013/NĐ-CP Về chức năng, nhiệm vụ và cơ chế hoạt động của Tổng công ty Đầu tư và Kinh doanh vốn nhà nước
+[trang 28 - 79/100] 32493 - Nghị định số 121/2013/NĐ-CP Quy định xử phạt vi phạm hành chính trong hoạt động xây dựng; kinh doanh bất động sản; khai thác, sản xuất, kinh doanh vật liệu xây dựng; quản lý công trình hạ tầng kỹ thuật; quản lý phát triển nhà và công sở
+[trang 28 - 92/100] 31853 - Nghị định số 98/2013/NĐ-CP Quy định về xử phạt vi phạm hành chính trong lĩnh vực kinh doanh bảo hiểm, kinh doanh xổ số
+[trang 28 - 93/100] 31969 - Nghị định số 97/2013/NĐ-CP Quy định xử phạt vi phạm hành chính trong lĩnh vực dầu khí, kinh doanh xăng dầu và khí dầu mỏ hóa lỏng
+[trang 28 - 100/100] 117608 - Nghị định số 86/2013/NĐ-CP quy định về kinh doanh trò chơi điện tử có thưởng dành cho người nước ngoài
+
+=== Trang 29/534 (100 văn bản) ===
+[trang 29 - 2/100] 32788 - Nghị định số 86/2013/NĐ-CP Về kinh doanh trò chơi điện tử có thưởng dành cho người nước ngoài
+[trang 29 - 14/100] 32558 - Nghị định số 67/2013/NĐ-CP Quy định chi tiết một số điều và biện pháp thi hành Luật Phòng, chống tác hại của thuốc lá về kinh doanh thuốc lá
+[trang 29 - 39/100] 30420 - Nghị định số 30/2013/NĐ-CP Về kinh doanh vận chuyển hàng không và hoạt động hàng không chung
+[trang 29 - 65/100] 27909 - Nghị định số 94/2012/NĐ-CP Về sản xuất, kinh doanh rượu
+[trang 29 - 67/100] 27915 - Nghị định số 93/2012/NĐ-CP Sửa đổi, bổ sung một số điều Nghị định số 91/2009/NĐ-CP ngày 21 tháng 10 năm 2009 của Chính phủ về kinh doanh và điều kiện kinh doanh vận tải bằng xe ô tô
+[trang 29 - 76/100] 27800 - Nghị định số 78/2012/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 30/2007/NĐ-CP ngày 01 tháng 3 năm 2007 của Chính phủ về kinh doanh xổ số
+[trang 29 - 77/100] 27801 - Nghá» Äá»nh sá» 79/2012/NÄ-CP Quy Äá»nh vá» biá»u diá»n nghá» thuáº­t, trÃ¬nh diá»n thá»i trang; thi ngÆ°á»i Äáº¹p vÃ  ngÆ°á»i máº«u; lÆ°u hÃ nh, kinh doanh báº£n ghi Ã¢m, ghi hÃ¬nh ca mÃºa nháº¡c, sÃ¢n kháº¥u
+
+=== Trang 30/534 (100 văn bản) ===
+[trang 30 - 4/100] 27438 - Nghị định số 32/2012/NĐ-CP Về quản lý xuất, nhập khẩu văn hóa phẩm không nhằm mục đích kinh doanh
+[trang 30 - 8/100] 27414 - Nghị định số 24/2012/NĐ-CP Về quản lý hoạt động kinh doanh vàng
+[trang 30 - 19/100] 27262 - Nghị định số 123/2011/NĐ-CP Quy định chi tiết thi hành một số điều của Luật Sửa đổi, bổ sung một số điều của Luật Kinh doanh bảo hiểm và sửa đổi, bổ sung một số điều của Nghị định số 45/2007/NĐ-CP ngày 27 tháng 3 năm 2007 của Chính phủ quy định chi tiết thi hành một số điều của Luật Kinh doanh bảo hiểm
+[trang 30 - 22/100] 27258 - Nghị định số 118/2011/NĐ-CP Sửa đổi, bổ sung thủ tục hành chính trong lĩnh vực kinh doanh xăng dầu và khí dầu mỏ hóa lỏng
+[trang 30 - 29/100] 27076 - Nghị định số 104/2011/NĐ-CP Quy định xử phạt vi phạm hành chính về kinh doanh xăng dầu
+[trang 30 - 30/100] 27017 - Nghị định số 105/2011/NĐ-CP Quy định xử phạt vi phạm hành chính về kinh doanh khí dầu mỏ hóa lỏng
+[trang 30 - 81/100] 26293 - Nghị định số 24/2011/NĐ-CP Sửa đổi một số điều của Nghị định số 108/2009/NĐ-CP ngày 27 tháng 11 năm 2009 về đầu tư theo hình thức hợp đồng xây dựng - kinh doanh - chuyển giao, hợp đồng xây dựng - chuyển giao - kinh doanh, hợp đồng xây dựng - chuyển giao
+
+=== Trang 31/534 (100 văn bản) ===
+[trang 31 - 5/100] 25837 - Nghị định số 109/2010/NĐ-CP Về kinh doanh xuất khẩu gạo
+[trang 31 - 8/100] 25786 - Nghị định số 105/2010/NĐ-CP Quy định xử phạt vi phạm hành chính về hoạt động kinh doanh xổ số
+[trang 31 - 29/100] 25455 - Nghị định số 76/2010/NĐ-CP Sửa đổi, bổ sung Điều 11 Nghị định số 06/2009/NĐ-CP ngày 22 tháng 01 năm 2009 của Chính phủ về xử phạt vi phạm hành chính trong lĩnh vực sản xuất, kinh doanh rượu và thuốc lá
+[trang 31 - 62/100] 25026 - Nghị định số 15/2010/NĐ-CP Quy định về xử phạt vi phạm hành chính trong hoạt động sản xuất, kinh doanh phân bón
+[trang 31 - 77/100] 23788 - Nghị định số 108/2009/NĐ-CP Về đầu tư theo hình thức Hợp đồng Xây dựng – Kinh doanh – Chuyển giao, Hợp đồng Xây dựng – Chuyển giao – Kinh doanh, Hợp đồng Xây dựng – Chuyển giao
+[trang 31 - 78/100] 23793 - Nghị định số 107/2009/NĐ-CP Về kinh doanh khí dầu mỏ hóa lỏng
+[trang 31 - 81/100] 23833 - Nghị định số 103/2009/NĐ-CP Ban hành Quy chế hoạt động văn hóa và kinh doanh dịch vụ văn hóa công cộng
+[trang 31 - 87/100] 23714 - Nghị định số 91/2009/NĐ-CP Về kinh doanh và điều kiện kinh doanh vận tải bằng xe ô tô
+[trang 31 - 91/100] 24838 - Nghị định số 84/2009/NĐ-CP Về kinh doanh xăng dầu
+[trang 31 - 94/100] 23634 - Nghị định số 72/2009/NĐ-CP Quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề kinh doanh có điều kiện
+
+=== Trang 32/534 (100 văn bản) ===
+[trang 32 - 12/100] 12111 - Nghị định số 43/2009/NĐ-CP Sửa đổi, bổ sung Danh mục hàng hóa, dịch vụ cấm kinh doanh của Nghị định 59/2006/NĐ-CP ngày 12 tháng 6 năm 2006 hướng dẫn thi hành Luật Thương mại về hàng hóa, dịch vụ cấm kinh doanh, hạn chế kinh doanh và kinh doanh có điều kiện
+[trang 32 - 13/100] 12147 - Nghị định số 41/2009/NĐ-CP Về xử phạt vi phạm hành chính trong lĩnh vực kinh doanh bảo hiểm
+[trang 32 - 24/100] 12329 - Nghị định số 23/2009/NĐ-CP Về xử phạt vi phạm hành chính trong hoạt động xây dựng; kinh doanh bất động sản; khai thác, sản xuất, kinh doanh vật liệu xây dựng; quản lý công trình hạ tầng kỹ thuật; quản lý phát triển nhà và công sở
+[trang 32 - 28/100] 12267 - Nghị định số 14/2009/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 59/2005/NĐ-CP ngày 04 tháng 5 năm 2005 về điều kiện sản xuất, kinh doanh một số ngành nghề thủy sản
+[trang 32 - 33/100] 12562 - Nghị định số 06/2009/NĐ-CP Xử phạt vi phạm hành chính trong lĩnh vực sản xuất, kinh doanh rượu và thuốc lá
+[trang 32 - 53/100] 24612 - Nghị định số 114/2008/NĐ-CP Hướng dẫn chi tiết thi hành một số điều của Luật Phá sản đối với doanh nghiệp hoạt động kinh doanh trong lĩnh vực bảo hiểm, chứng khoán và tài chính khác
+[trang 32 - 78/100] 24606 - Nghị định số 52/2008/NĐ-CP Về quản lý kinh doanh dịch vụ bảo vệ
+[trang 32 - 84/100] 24621 - Nghị định số 40/2008/NĐ-CP Về sản xuất, kinh doanh rượu
+
+=== Trang 33/534 (100 văn bản) ===
+[trang 33 - 5/100] 12960 - Nghị định số 191/2007/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 113/2003/NĐ-CP ngày 07/10/2003 của Chính phủ về việc quản lý sản xuất, kinh doanh phân bón
+[trang 33 - 23/100] 13178 - Nghị định số 153/2007/NĐ-CP Quy định chi tiết và hướng dẫn thi hành Luật Kinh doanh bất động sản
+[trang 33 - 31/100] 13505 - Nghị định số 140/2007/NĐ-CP Quy định chi tiết Luật Thương mại về điều kiện kinh doanh dịch vụ lô-gi-stíc và giới hạn trách nhiệm đối với thương nhân kinh doanh dịch vụ lô-gi-stíc
+[trang 33 - 49/100] 13840 - Nghị định số 119/2007/NĐ-CP Về sản xuất và kinh doanh thuốc lá
+[trang 33 - 52/100] 13863 - Nghị định số 115/2007/NĐ-CP Về điều kiện kinh doanh dịch vụ vận tải biển
+[trang 33 - 60/100] 14074 - Nghị định số 102/2007/NĐ-CP Quy định thời hạn không được kinh doanh trong lĩnh vực có trách nhiệm quản lý đối với những người là cán bộ, công chức, viên chức sau khi thôi giữ chức vụ
+[trang 33 - 61/100] 14020 - Nghị định số 104/2007/NĐ-CP Về kinh doanh dịch vụ đòi nợ
+[trang 33 - 79/100] 14304 - Nghị định số 78/2007/NĐ-CP Về đầu tư theo hình thức Hợp đồng Xây dựng - Kinh doanh - Chuyển giao, Hợp đồng Xây dựng - Chuyển giao - Kinh doanh, Hợp đồng Xây dựng - Chuyển giao
+[trang 33 - 80/100] 14290 - Nghị định số 76/2007/NĐ-CP Về kinh doanh vận chuyển hàng không và hoạt động hàng không chung
+[trang 33 - 82/100] 14294 - Nghị định số 73/2007/NĐ-CP Về hoạt động nghiên cứu, sản xuất, kinh doanh và sử dụng mật mã để bảo vệ thông tin không thuộc phạm vi bí mật nhà nước
+[trang 33 - 90/100] 14391 - Nghị định số 55/2007/NĐ-CP Về kinh doanh xăng dầu
+[trang 33 - 94/100] 14392 - Nghị định số 45/2007/NĐ-CP Quy định chi tiết thi hành một số điều của Luật Kinh doanh bảo hiểm
+[trang 33 - 99/100] 14402 - Nghị định số 39/2007/NĐ-CP Về cá nhân hoạt động thương mại một cách độc lập, thường xuyên không phải đăng ký kinh doanh
+
+=== Trang 34/534 (100 văn bản) ===
+[trang 34 - 2/100] 14346 - Nghị định số 30/2007/NĐ-CP Về kinh doanh xổ số
+[trang 34 - 33/100] 15229 - Nghị định số 110/2006/NĐ-CP Về điều kiện kinh doanh vận tải bằng ôtô
+[trang 34 - 50/100] 15342 - Nghị định số 88/2006/NĐ-CP Về đăng ký kinh doanh
+[trang 34 - 68/100] 16019 - Nghị định số 59/2006/NĐ-CP Quy định chi tiết Luật Thương mại về hàng hóa, dịch vụ cấm kinh doanh, hạn chế kinh doanh và kinh doanh có điều kiện
+[trang 34 - 87/100] 16529 - Nghị định số 21/2006/NĐ-CP Về việc kinh doanh và sử dụng các sản phẩm dinh dưỡng dùng cho trẻ em
+[trang 34 - 88/100] 16668 - Nghị định số 20/2006/NĐ-CP Quy định chi tiết Luật Thương mại về kinh doanh dịch vụ giám định thương mại
+[trang 34 - 92/100] 16813 - Nghị định số 11/2006/NĐ-CP Về việc ban hành Quy chế hoạt động văn hoá và kinh doanh dịch vụ văn hoá công cộng
+
+=== Trang 35/534 (100 văn bản) ===
+[trang 35 - 20/100] 17346 - Nghá» Äá»nh sá» 125/2005/NÄ-CP Quy Äá»nh cháº¿ Äá» báº£o hiá»m báº¯t buá»c trÃ¡ch nhiá»m dÃ¢n sá»± cá»§a ngÆ°á»i kinh doanh váº­n táº£i hÃ nh khÃ¡ch, hÃ ng hÃ³a dá» chÃ¡y vÃ  dá» ná» trÃªn ÄÆ°á»ng thá»§y ná»i Äá»a
+[trang 35 - 43/100] 18050 - Nghị định số 87/2005/NĐ-CP Về đăng ký kinh doanh hợp tác xã
+[trang 35 - 46/100] 18118 - Nghị định số 80/2005/NĐ-CP Về giao, bán, khoán kinh doanh, cho thuê công ty nhà nước
+[trang 35 - 54/100] 18413 - Nghị định số 59/2005/NĐ-CP Về điều kiện sản xuất, kinh doanh một số ngành nghề thuỷ sản
+
+=== Trang 36/534 (100 văn bản) ===
+[trang 36 - 23/100] 19667 - Nghị định số 129/2004/NĐ-CP Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Kế toán áp dụng trong hoạt động kinh doanh
+[trang 36 - 32/100] 20138 - Nghị định số 109/2004/NĐ-CP Về đăng ký kinh doanh
+[trang 36 - 65/100] 20976 - Nghị định số 118/2003/NĐ-CP Quy định xử phạt vi phạm hành chính trong lĩnh vực kinh doanh bảo hiểm
+[trang 36 - 69/100] 17586 - Nghị định số 113/2003/NĐ-CP Về quản lý sản xuất, kinh doanh phân bón
+[trang 36 - 94/100] 21465 - Nghị định số 64/2003/NĐ-CP Sửa đổi, bổ sung Nghị định số 174/1999/NĐ-CP ngày 09 tháng 12 năm 1999 của Chính phủ về quản lý hoạt động kinh doanh vàng
+
+=== Trang 37/534 (100 văn bản) ===
+[trang 37 - 12/100] 21604 - Nghị định số 37/2003/NĐ-CP Quy định xử phạt vi phạm hành chính về đăng ký kinh doanh
+[trang 37 - 39/100] 21919 - Nghị định số 88/2002/NĐ-CP Về quản lý xuất khẩu, nhập khẩu văn hóa phẩm không nhằm mục đích kinh doanh
+[trang 37 - 50/100] 22274 - Nghị định số 73/2002/NĐ-CP Bổ sung hàng hoá, dịch vụ thương mại vào Danh mục I về hàng hoá cấm lưu thông, dịch vụ thương mại cấm thực hiện; Danh mục 3 về hàng hoá, dịch vụ thương mại kinh doanh có điều kiện ban hành kèm theo Nghị định số 11/1999/NĐ-CP ngày 03 tháng 3 năm 1999 của Chính phủ
+[trang 37 - 63/100] 22519 - Nghị định số 49/2002/NĐ-CP Sửa đổi, bổ sung một số điều của Nghị định số 103/1999/NĐ-CP ngày 10 tháng 9 năm 1999 của Chính phủ về giao, bán, khoán kinh doanh, cho thuê doanh nghiệp nhà nước
+[trang 37 - 80/100] 22863 - Nghị định số 91/2001/NĐ-CP Về điều kiện kinh doanh một số ngành, nghề giao thông vận tải đường thủy nội địa
+[trang 37 - 81/100] 22922 - Nghị định số 92/2001/NĐ-CP Về điều kiện kinh doanh vận tải bằng ô tô.
+[trang 37 - 83/100] 22824 - Nghị định số 86/2001/NĐ-CP Về điều kiện kinh doanh các ngành nghề thuỷ sản.
+[trang 37 - 88/100] 23045 - Nghị định số 76/2001/NĐ-CP Về hoạt động sản xuất và kinh doanh thuốc lá
+[trang 37 - 95/100] 23205 - Nghị định số 57/2001/NĐ-CP Về điều kiện kinh doanh vận tải biển
+
+=== Trang 38/534 (100 văn bản) ===
+[trang 38 - 3/100] 23244 - Nghị định số 42/2001/NĐ-CP Quy định chi tiết thi hành một số điều của Luật kinh doanh bảo hiểm.
+[trang 38 - 11/100] 23398 - Nghị định số 27/2001/NĐ-CP Về kinh doanh lữ hành, hướng dẫn du lịch
+[trang 38 - 18/100] 23449 - Nghị định số 14/2001/NĐ-CP Về quản lý hoạt động kinh doanh dịch vụ bảo vệ
+[trang 38 - 20/100] 23516 - Nghị định số 10/2001/NĐ-CP Về điều kiện kinh doanh dịch vụ hàng hải
+[trang 38 - 21/100] 23589 - Nghị định số 08/2001/NĐ-CP Quy định về điều kiện an ninh, trật tự đối với một số ngành, nghề kinh doanh có điều kiện
+[trang 38 - 33/100] 5913 - Nghị định số 74/2000/NĐ-CP Về kinh doanh và sử dụng các sản phẩm thay thế sữa mẹ để bảo vệ và khuyến khích việc nuôi con bằng sữa mẹ
+[trang 38 - 36/100] 5795 - Nghị định số 54/2000/NĐ-CP Về bảo hộ quyền sở hữu công nghiệp đối với bí mật kinh doanh, chỉ dẫn địa lý, tên thương mại và bảo hộ quyền chống cạnh tranh không lành mạnh liên quan tới sở hữu công nghiệp
+[trang 38 - 46/100] 6126 - Nghị định số 30/2000/NĐ-CP Về việc bãi bỏ một số giấy phép và chuyển một số giấy phép thành điều kiện kinh doanh
+[trang 38 - 60/100] 6379 - Nghị định số 02/2000/NĐ-CP Về đăng ký kinh doanh
+[trang 38 - 66/100] 6533 - Nghị định số 174/1999/NĐ-CP Về quản lý hoạt động kinh doanh vàng
+[trang 38 - 76/100] 6961 - Nghị định số 103/1999/NĐ-CP Về giao, bán, khoán kinh doanh, cho thuê doanh nghiệp nhà nước
+[trang 38 - 94/100] 7112 - Nghị định số 27/1999/NĐ-CP Sửa đổi, bổ sung Quy chế quản lý tài chính và hạch toán kinh doanh đối với doanh nghiệp nhà nước ban hành kèm theo Nghị định số 59/CP ngày 03/10/1996 của Chính phủ
+[trang 38 - 98/100] 7118 - Nghị định số 20/1999/NĐ-CP Về kinh doanh dịch vụ giám định hàng hóa
+
+=== Trang 39/534 (100 văn bản) ===
+[trang 39 - 4/100] 7127 - Nghị định số 11/1999/NĐ-CP Về hàng hóa cấm lưu thông, dịch vụ thương mại cấm thực hiện; hàng hóa, dịch vụ thương mại hạn chế kinh doanh, kinh doanh có điều kiện
+[trang 39 - 7/100] 7240 - Nghị định số 02/1999/NĐ-CP Sửa đổi, bổ sung một số điều của Quy chế đầu tư theo Hợp đồng xây dựng - kinh doanh - chuyển giao, Hợp đồng xây dựng - chuyển giao - kinh doanh, Hợp đồng xây dựng - chuyển giao áp dụng cho đầu tư nước ngoài tại Việt Nam
+[trang 39 - 22/100] 7560 - Nghị định số 62/1998/NĐ-CP Ban hành Quy chế đầu tư theo Hợp đồng xây dựng - kinh doanh- chuyển giao, Hợp đồng xây dựng - chuyển giao - kinh doanh và hợp đồng xây dựng - chuyển giao áp dụng cho đầu tư nước ngoài tại Việt Nam
+[trang 39 - 35/100] 7708 - Nghị định số 40/1998/NĐ-CP Về kinh doanh vận tải biển của công ty, doanh nghiệp tư nhân
+[trang 39 - 41/100] 7805 - Nghị định số 24/1998/NĐ-CP Về việc sửa đổi, bổ sung thuế suất thuế doanh thu đối với một số sản phẩm, ngành nghề kinh doanh
+[trang 39 - 57/100] 8461 - Nghị định số 77/CP Về việc ban hành Quy chế đầu tư theo hình thức hợp đồng Xây dựng - Kinh doanh - Chuyển giao (B.O.T) áp dụng cho đầu tư trong nước
+[trang 39 - 58/100] 8501 - Nghị định số 74/CP Sửa đổi, bổ sung một số điều quy định tại Nghị định số 100/CP ngày 18/12/1993 của Chính phủ về kinh doanh bảo hiểm
+[trang 39 - 96/100] 9041 - Nghị định số 59-CP Ban hành Quy chế quản lý tài chính và hạch toán kinh doanh đối với doanh nghiệp Nhà nước
+
+=== Trang 40/534 (100 văn bản) ===
+[trang 40 - 21/100] 9410 - Nghị định số 21/CP Về việc sửa đổi, bổ sung Điều 5 và Điều 7 của Nghị định số 61/CP ngày 5-7-1994 của Chính phủ về mua bán và kinh doanh Nhà ở
+[trang 40 - 88/100] 9988 - Nghị định số 02/CP Quy định về hàng hoá, dịch vụ cấm kinh doanh thương mại và hàng hoá, dịch vụ kinh doanh thương mại có điều kiện ở thị trường trong nước
+
+=== Trang 41/534 (100 văn bản) ===
+[trang 41 - 15/100] 10316 - Nghị định số 61-CP Về mua bán và kinh doanh nhà ở
+[trang 41 - 34/100] 10627 - Nghị định số 100/CP Về kinh doanh bảo hiểm
+[trang 41 - 39/100] 86372 - Nghị định số 87-CP Của chính phủ ban hành quy chế đầu tư theo hình thức hợp đồng xây dựng - kinh doanh - chuyển giao (BOT)
+[trang 41 - 40/100] 10638 - Nghị định số 87/CP Ban hành Quy chế Đầu tư theo hình thức hợp đồng xây dựng - kinh doanh - chuyển giao (BOT)
+[trang 41 - 47/100] 10654 - Nghị định số 63-CP Quản lý Nhà nước đối với hoạt động kinh doanh vàng
+[trang 41 - 76/100] 11046 - Nghị định số 17-CP Về việc quản lý các nghề kinh doanh đặc biệt
+[trang 41 - 91/100] 174279 - Nghị định số 01/2025/NĐ-CP sửa đổi, bổ sung một số điều của Nghị định số 107/2018/NĐ-CP ngày 15 tháng 8 năm 2018 của Chính phủ về kinh doanh xuất khẩu gạo
+
+=== Trang 42/534 (100 văn bản) ===
+[trang 42 - 6/100] 11196 - Nghị định số 66-HĐBT Về cá nhân và nhóm kinh doanh có vốn thấp hơn vốn pháp định quy định trong Nghị định số: 221-HĐBT ngày 23 tháng 07 năm 1991
+[trang 42 - 8/100] 11207 - Nghị định số 37-HĐBT Về việc ban hành Quy chế quản lý kinh doanh du lịch
+[trang 42 - 61/100] 2220 - Nghị định số 64-HĐBT Ban hành bản Quy định về chế độ và tổ chức quản lý hoạt động kinh doanh xuất nhập khẩu
+[trang 42 - 63/100] 2224 - Nghị định số 58/HĐBT Về việc thành lập các tổ chức sản xuất kinh doanh thuộc Bộ Quốc phòng
+[trang 42 - 93/100] 2521 - Nghị định số 27/HĐBT Ban hành bản Quy định về chính sách đối với kinh tế cá thể, kinh tế tư doanh sản xuất công nghiệp, dịch vụ công nghiệp, xây dựng, vận tải (kèm theo QĐ về C/S đối với KT cá thể, kinh doanh SXCN, XD, vận tải)
+
+=== Trang 43/534 (100 văn bản) ===
+[trang 43 - 16/100] 2889 - Nghị định số 104/HĐBT Về việc sửa đổi Nghị định số 46-HĐBT ngày 10-05-1983 quy định việc xử lý bằng biện pháp hành chính các hành vi đầu cơ, buôn lậu, làm hàng giả, kinh doanh trái phép
+[trang 43 - 20/100] 2965 - Nghị định số 54-HĐBT Về việc hợp nhất các cơ sở sản xuất đồ hộp, đông lạnh và kinh doanh xuất nhập khẩu rau quả thuộc Bộ Công nghiệp thực phẩm
+[trang 43 - 26/100] 3105 - Nghị định số 204-HĐBT Về việc sửa đổi tổ chức kinh doanh cung ứng vật tư của Bộ Vật tư
+[trang 43 - 28/100] 3119 - Nghị định số 178-HĐBT Về tổ chức pháp chế ở các ngành, các đơn vị sản xuất, kinh doanh thuộc khu vực Nhà nước
+[trang 43 - 36/100] 3198 - Nghị định số 23-HĐBT Về việc sắp xếp lại các đơn vị sản xuất, kinh doanh và nghiên cứu trực thuộc Tổng cục Điện tử và kỹ thuật tin học
+[trang 43 - 48/100] 3599 - Nghị định số 46/HĐBT Quy định việc xử lý bằng biện pháp hành chính các hành vi đầu cơ, buôn lậu, làm hàng giả, kinh doanh trái phép
+[trang 43 - 74/100] 1501 - Nghị định số 119/CP Ban hành Điều lệ đăng ký kinh doanh công thương nghiệp và phục vụ áp dụng cho khu vực kinh tế tập thể và cá thể
+
+=== Trang 44/534 (100 văn bản) ===
+[trang 44 - 14/100] e0420900-582e-11f1-af2d-fd6705b18ec6 - Thông tư 22/2026/TT-BKHCN Sửa đổi, bổ sung một số thông tư trong lĩnh vực tiêu chuẩn đo lường chất lượng để thực hiện cắt giảm, đơn giản hóa thủ tục hành chính và phù hợp với pháp luật về đầu tư kinh doanh
+[trang 44 - 25/100] 9218ce30-43ca-11f1-bb8f-59610109e2ae - Thông tư số 21/2026/TT-BCT Bãi bỏ một phần khoản 2 Điều 1 của Thông tư số 18/2025/TT-BCT ngày 13 tháng 3 năm 2025 của Bộ trưởng Bộ Công Thương sửa đổi, bổ sung, bãi bỏ một số quy định tại các Thông tư quy định về kinh doanh xăng dầu
+[trang 44 - 29/100] 187729 - ThÃ´ng tÆ° sá» 40/2026/TT-BTC Quy Äá»nh miá»n má»t sá» khoáº£n phÃ­, lá» phÃ­ nháº±m há» trá»£ sáº£n xuáº¥t, kinh doanh trong lÄ©nh vá»±c giao thÃ´ng váº­n táº£i
+  Lỗi: Không có nội dung HTML
+[trang 44 - 78/100] 186482 - Thông tư số 69/2025/TT-NHNN ửa đổi, bổ sung một số điều của một số Thông tư của Thống đốc
+
+Ngân hàng Nhà nước Việt Nam trong lĩnh vực quản lý, giám sát ngân hàng liên quan đến cắt giảm điều kiện kinh doanh,
+
+đơn giản hóa thủ tục hành chính
+[trang 44 - 81/100] 187022 - Thông tư số 152/2025/TT-BTС Hướng dẫn kế toán cho các hộ kinh doanh, cá nhân kinh doanh
+
+=== Trang 45/534 (100 văn bản) ===
+[trang 45 - 20/100] 186002 - Thông tư số 21/2025/TT-BVHTTDL sửa đổi, bổ sung một số điều của các Thông tư có quy định thủ tục hành chính liên quan đến hoạt động sản xuất, kinh doanh thuộc phạm vi quản lý của Bộ Văn hóa, Thể thao và Du lịch
+[trang 45 - 21/100] 185472 - Thông tư số 58/2025/TT-NHNN Sửa đổi, bổ sung một số điều của Thông tư số 34/2025/TT-NHNN
+hướng dẫn một số điều của Nghị định số 24/2012/NĐ-CP ngày 03 tháng 4 
+năm 2012 của Chính phủ về quản lý hoạt động kinh doanh vàng
+được sửa đổi, bổ sung bởi Nghị định số 232/2025/NĐ-CP
+[trang 45 - 34/100] 94aed1b0-5439-11f1-99d2-bfeac4063ef0 - Thông tư 119/2025/TT-BTC Về đăng ký kinh doanh của tổ chức khoa học và công nghệ
+[trang 45 - 62/100] 185841 - Thông tư số 110/2025/TT-BTС Quy định mức thu, chế độ thu, nộp phí thẩm định cấp giấy phép kinh doanh karaoke, vũ trường
+[trang 45 - 87/100] 187357 - Thông tư số 98/2025/TT-BTC Quy định mẫu hồ sơ đấu thầu lựa chọn nhà đầu tư thực hiện dự án đầu tư theo phương thức đối tác công tư, dự án đầu tư kinh doanh; cung cấp, đăng
+tải thông tin về đầu tư theo phương thức đối tác công tư, đấu thầu lựa chọn nhà đầu tư trên Hệ thống mạng đấu thầu quốc gia
+[trang 45 - 98/100] 182708 - Thông tư số 34/2025/TT-NHNN Hướng dẫn một số điều của Nghị định số 24/2012/NĐ-CP ngày 03 tháng 4 năm 2012 của Chính phủ về quản lý hoạt động kinh doanh vàng được sửa đổi, bổ sung bởi Nghị định số 232/2025/NĐ-CP
+
+=== Trang 46/534 (100 văn bản) ===
+[trang 46 - 21/100] 181499 - Thông tư số 83/2025/TT-BTC Bãi bỏ Thông tư số 138/2012/TT-BTC ngày 20 tháng 8 năm 2012 của Bộ
+Tài chính hướng dẫn phân bổ giá trị lợi thế kinh doanh đối với công ty cổ
+phần được chuyển đổi từ công ty nhà nước
+[trang 46 - 33/100] 180564 - Thông tư số 77/2025/TT-BTC Quy định chi tiết các dịch vụ kinh doanh chứng khoán và chuyển nhượng
+chứng khoán theo Nghị định số 181/2025/NĐ-CP ngày 01 tháng 7 năm 2025
+của Chính phủ quy định chi tiết thi hành một số điều của
+Luật Thuế giá trị gia tăng
+[trang 46 - 51/100] 179097 - Thông tư số 68/2025/TT-BTC Ban hành biểu mẫu sử dụng trong đăng ký doanh nghiệp,
+đăng ký hộ kinh doanh
+[trang 46 - 57/100] 179080 - Thông tư số 61/2025/TT-BTC Sửa đổi, bổ sung khoản 1 Điều 4 của Thông tư số 75/2013/TТ-BTC
+ngày 04 tháng 6 năm 2013 của Bộ trưởng Bộ Tài chính
+hướng dẫn chỉ tiết về hoạt động kinh doanh xổ số
+[trang 46 - 84/100] 178724 - Thông tư số 16/VBHT-BCT Quy định chi tiết một số điều của Nghị định số 107/2018/NĐ-CP 
+ngày 15 tháng 8 năm 2018 của Chính phủ về kinh doanh xuất khẩu gạo
+[trang 46 - 100/100] 178496 - Thông tư số 43/2025/TT-BTC Ban hành biểu mẫu sử dụng trong lĩnh vực quản lý nhà nước đối với hộ kinh doanh, tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã khi tổ chức chính quyền địa phương 02 cấp
+
+=== Trang 47/534 (100 văn bản) ===
+[trang 47 - 13/100] 178171 - Thông tư số 06/2025/TT-BKHCN Sửa đổi, bổ sung, bãi bỏ một số điều của Thông tư số 15/2015/TT-BKHCN ngày 25 tháng 8 năm 2015 của Bộ trưởng Bộ Khoa học và Công nghệ quy định về đo lường, chất lượng trong kinh doanh xăng dầu đã được sửa đổi, bổ sung tại Thông tư số 08/2018/TT-BKHCN
+[trang 47 - 16/100] 178483 - Thông tư số 35/2025/TT-BCT Sửa đổi, bổ sung một số điều của Thông tư số 30/2018/TT-BCT ngày 01 tháng 10 năm 2018 của Bộ trưởng Bộ Công Thương quy định chi tiết một số điều của Nghị định số 107/2018/NĐ-CP ngày 15 tháng 8 năm 2018 của Chính phủ về kinh doanh xuất khẩu gạo và Thông tư số 42/2019/TT-BCT ngày 18 tháng 12 năm 2019 của Bộ trưởng Bộ Công Thương sửa đổi, bổ sung một số quy định về chế độ báo cáo định kỳ tại các Thông tư do Bộ trưởng Bộ Công Thương ban hành hoặc liên tịch ban hành
+[trang 47 - 60/100] 177569 - Thông tư số 09/2025/TT-BTC Hướng dẫn cơ chế quản lý và sử dụng kinh phí ngân sách nhà nước thực hiện "Chương trình hỗ trợ doanh nghiệp khu vực tư nhân kinh doanh bền vững giai đoạn 2022 - 2025" ban hành kèm theo Quyết định số 167/QĐ-TTg ngày 08 tháng 02 năm 2022 của Thủ tướng Chính phủ
+[trang 47 - 71/100] 176987 - Thông tư số 02/2025/TT-BTNMT Quy chuẩn kỹ thuật quốc gia khoảng cách an toàn về môi trường đối với khu dân cư của cơ sở sản xuất, kinh doanh, dịch vụ và kho tàng có nguy cơ phát tán bụi, mùi khó chịu, tiếng ồn tác động xấu đến sức khỏe con người
+[trang 47 - 87/100] 174851 - Thông tư số 05/2025/TT-BTC Sửa đổi, bổ sung một số điều của Thông tư số 202/2012/TT-BTC
+ngày 19/11/2012 của Bộ trưởng Bộ Tài chính hướng dẫn về đăng ký,
+quản lý và công khai danh sách kiểm toán viên hành nghề kiểm toán;
+Thông tư số 203/2012/TT-BTC ngày 19/11/2012 của Bộ trưởng Bộ Tài chính
+về trình tự, thủ tục cấp, quản lý, sử dụng Giấy chứng nhận đủ điều kiện
+kinh doanh dịch vụ kiểm toán; Thông tư số 157/2014/TT-BTC
+ngày 23/10/2014 của Bộ trưởng Bộ Tài chính quy định về
+kiểm soát chất lượng dịch vụ kiểm toán
+
+=== Trang 48/534 (100 văn bản) ===
+[trang 48 - 6/100] 174884 - Thông tư số 25/2024/TT-BKHĐT Quy định chi tiết trình tự, thủ tục lập, lấy ý kiến, Quyết định đề án sử dụng tài sản công thuộc phạm vi quản lý trên địa bàn Thành phố Hà Nội vào mục đích kinh doanh, cho thuê, liên doanh, liên kết của Trung tâm Đổi mới sáng tạo Quốc gia; phương thức và giá cho thuê tài sản công của Trung tâm Đổi mới sáng tạo Quốc gia trong Khu công nghệ cao Hòa Lạc
+[trang 48 - 67/100] 172685 - Thông tư số 17/2024/TT-BNNPTNT Sửa đổi, bổ sung một số Thông tư quy định thẩm định, chứng nhận cơ sở sản xuất, kinh doanh thực phẩm nông, lâm, thủy sản đủ điều kiện bảo đảm an toàn thực phẩm thuộc phạm vi quản lý của Bộ Nông nghiệp và Phát triển nông thôn
+
+=== Trang 49/534 (100 văn bản) ===
+[trang 49 - 3/100] 173110 - Thông tư số 12/2024/TT-BLĐTBXH Sửa đổi, bổ sung 10 Thông tư hướng dẫn thực hiện quản lý lao động, tiền lương, thù lao, tiền thưởng đối với Bảo hiểm tiền gửi Việt Nam, Công ty Quản lý tài sản của các tổ chức tín dụng Việt Nam, Đài Truyền hình Việt Nam, Quỹ Đầu tư phát triển địa phương, Tổng công ty Đầu tư và Kinh doanh vốn nhà nước, Quỹ bảo lãnh tín dụng cho doanh nghiệp nhỏ và vừa, Quỹ Phát triển doanh nghiệp nhỏ và vừa, Quỹ Đổi mới công nghệ quốc gia, Quỹ hỗ trợ phát triển hợp tác xã và hướng dẫn quản lý lao động, tiền lương, thù lao, tiền thưởng đối với Công ty trách nhiệm hữu hạn một thành viên Mua bán nợ Việt Nam
+[trang 49 - 6/100] 173049 - Thông tư số 32/2024/TT-BGTVT Quy định về quản lý giá dịch vụ sử dụng đường bộ của các dự án đầu tư xây dựng đường bộ để kinh doanh, do trung ương quản lý
+[trang 49 - 39/100] 173408 - Thông tư số 19/2024/TT-BCT Sửa đổi 1:2024 QCVN 05A:2020/BCT Quy chuẩn kỹ thuật quốc gia về an toàn trong sản xuất, kinh doanh, sử dụng, bảo quản và vận chuyển hóa chất nguy hiểm
+[trang 49 - 40/100] 170296 - Thông tư số 17/2024/TT-BCT sửa đổi, bổ sung một số điều của Thông tư số 22/2019/TT-BCT ngày 12 tháng 11 năm 2019 của Bộ trưởng Bộ Công Thương quy định về việc tạm ngừng kinh doanh chuyển khẩu, kinh doanh tạm nhập gỗ dán vào 
+Việt Nam để tái xuất sang Hoa Kỳ
+[trang 49 - 42/100] 170299 - Thông tư số '18/2024/TT-BCT Quy định về danh mục phế liệu tạm ngừng kinh doanh tạm nhập, tái xuất, chuyển khẩu
+[trang 49 - 48/100] 171622 - Thông tư số 15/2024/TT-BKHĐT Quy định mẫu hồ sơ đấu thầu lựa chọn nhà đầu tư thực hiện dự án đầu tư theo phương thức đối tác công tư, dự án đầu tư kinh doanh; cung cấp, đăng tải thông tin về đầu tư theo phương thức đối tác công tư, đấu thầu lựa chọn nhà đầu tư trên Hệ thống mạng đấu thầu quốc gia
+
+=== Trang 50/534 (100 văn bản) ===
+[trang 50 - 3/100] 168490 - Thông tư số 43/2024/TT-BTC Quy định mức thu một số khoản phí, lệ phí nhằm tiếp tục tháo gỡ khó khăn, hỗ trợ cho hoạt động sản xuất kinh doanh
+[trang 50 - 4/100] 168108 - Thông tư số 21/2024/TT-NHNN Quy định về nghiệp vụ thư tín dụng và các hoạt động kinh doanh khác liên quan đến thư tín dụng
+[trang 50 - 17/100] 167417 - Thông tư số 16/2024/TT-BGTVT Quy định một số nội dung về lựa chọn nhà đầu tư thực hiện dự án đầu tư kinh doanh công trình trạm dừng nghỉ
+[trang 50 - 51/100] 166257 - Thông tư số 05/2024/TT-BCT quy định về việc tạm ngừng kinh doanh tạm nhập, tái xuất mặt hàng quặng và tinh quặng Monazite
+[trang 50 - 55/100] 166772 - Thông tư số 22/2024/TT-BTC Sửa đổi, bổ sung một số điều của Thông tư số 202/2012/TT-BTC ngày 19/11/2012 hướng dẫn về đăng ký, quản lý và công khai danh sách kiểm toán viên hành nghề kiểm toán, Thông tư số 203/2012/TT-BTC ngày 19/11/2012 về trình tự, thủ tục cấp, quản lý, sử dụng Giấy chứng nhận đủ điều kiện kinh doanh dịch vụ kiểm toán và Thông tư số 91/2017/TT-BTC ngày 31/8/2017 quy định về việc thi, cấp, quản lý chứng chỉ kiểm toán viên và chứng chỉ kế toán viên
+[trang 50 - 73/100] 170133 - Thông tư số 03/2024/TT-BCA Sửa đổi, bổ sung một số điều của Thông tư số 42/2017/TT-BCA ngày 20 tháng 10 năm 2017 của Bộ trưởng Bộ Công an quy định chi tiết một số điều của Nghị định số 96/2016/NĐ-CP ngày 01 tháng 7 năm 2016 quy định điều kiện về an ninh, trật tự đối với một số ngành, nghề đầu tư kinh doanh có điều kiện, Thông tư số 43/2017/TT-BCA ngày 20 tháng 10 năm 2017 của Bộ trưởng Bộ Công an quy định về trình tự cấp, thu hồi Giấy chứng nhận đủ điều kiện về an ninh, trật tự và sát hạch, cấp Chứng chỉ nghiệp vụ bảo vệ, Thông tư số 45/2017/TT-BCA ngày 20 tháng 10 năm 2017 của Bộ trưởng Bộ Công an quy định về trình tự đăng ký mẫu con dấu, thu hồi và hủy con dấu, hủy giá trị sử dụng con dấu, kiểm tra việc quản lý và sử dụng con dấu
+[trang 50 - 74/100] 166420 - Thông tư số 55/2023/TT-BGTVT Hướng dẫn một số nội dung dự án đầu tư theo phương thức đối tác công tư, loại hợp đồng kinh doanh - quản lý đường bộ cao tốc
+[trang 50 - 90/100] 164602 - Thông tư số 21/2023/TT-NHNN sửa đổi, bổ sung một số điều của các Thông tư liên quan đến hoạt động kinh doanh thuộc phạm vi chức năng quản lý của Ngân hàng Nhà nước Việt Nam.
+
+=== Trang 51/534 (100 văn bản) ===
+[trang 51 - 2/100] 164729 - Thông tư số 44/2023/TT-BGTVT Hướng dẫn thực hiện Nghị định số 139/2018/NĐ-CP ngày 08 tháng 10 năm 2018 của Chính phủ quy định về kinh doanh dịch vụ kiểm định xe cơ giới và Nghị định số 30/2023/NĐ-CP ngày 08 tháng 6 năm 2023 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 139/2018/NĐ-CP của Chính phủ quy định về kinh doanh dịch vụ kiểm định xe cơ giới
+[trang 51 - 56/100] 163315 - Thông tư số 21/2023/TT-BCT quy định về việc tạm ngừng kinh doanh tạm nhập, tái xuất gỗ tròn, gỗ xẻ từ rừng tự nhiên từ Lào và Campuchia.
+[trang 51 - 61/100] 163439 - Thông tư số 67/2023/TT-BTC Hướng dẫn một số điều của Luật Kinh doanh bảo hiểm, Nghị định số 46/2023/NĐ-CP ngày 01 tháng 7 năm 2023 của Chính phủ quy định chi tiết thi hành một số điều của Luật Kinh doanh bảo hiểm
+
+=== Trang 52/534 (100 văn bản) ===
+[trang 52 - 32/100] 160645 - Thông tư số 12/2023/TT-BCT sửa đổi, bổ sung một số điều của Thông tư số 10/2018/TT-BCT ngày 24 tháng 5 năm 2018 của Bộ trưởng Bộ Công Thương quy định chi tiết một số điều của Nghị định số 40/2018/NĐ-CP ngày 12 tháng 3 năm 2018 của Chính phủ về quản lý hoạt động kinh doanh theo phương thức đa cấp
+[trang 52 - 84/100] 159026 - Thông tư số 32/2022/TT-BNNPTNT Sửa đổi, bổ sung một số Thông tư quy định thẩm định, chứng nhận cơ sở sản xuất, kinh doanh thực phẩm nông, lâm, thủy sản đủ điều kiện bảo đảm an toàn thực phẩm thuộc phạm vi quản lý của Bộ Nông nghiệp và Phát triển nông thôn
+
+=== Trang 53/534 (100 văn bản) ===
+[trang 53 - 26/100] 166549 - Thông tư số 30/2022/TT-BCT sửa đổi, bổ sung một số điều của Thông tư số 57/2018/TT-BCT ngày 26 tháng 12 năm 2018 quy định chi tiết một số điều của các Nghị định liên quan đến kinh doanh thuốc lá
+[trang 53 - 34/100] 159053 - Thông tư số 08/2022/TT-BVHTTDL sửa đổi, bổ sung một số điều của Thông tư số 07/2012/TT-BVHTTDL ngày 16 tháng 7 năm 2012 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch hướng dẫn Nghị định số 32/2012/NĐ-CP ngày 12 tháng 4 năm 2012 của Chính phủ về quản lý xuất khẩu, nhập khẩu văn hóa phẩm không nhằm mục đích kinh doanh
+[trang 53 - 40/100] 160089 - Thông tư số 11/2022/TT-BTNMT Sửa đổi, bổ sung một số điều của một số thông tư liên quan đến hoạt động kinh doanh thuộc phạm vi chức năng quản lý nhà nước của Bộ Tài nguyên và Môi trường
+[trang 53 - 51/100] 156250 - Thông tư số 59/2022/TT-BTC Quy định mức thu một số khoản phí, lệ phí nhằm hỗ trợ khó khăn cho hoạt động kinh doanh vận tải
+[trang 53 - 65/100] 157573 - Thông tư số 22/2022/TT-BGTVT Hướng dẫn một số nội dung trong báo cáo nghiên cứu tiền khả thi, báo cáo nghiên cứu khả thi dự án đầu tư theo phương thức đối tác công tư, loại hợp đồng xây dựng - kinh doanh - chuyển giao thuộc lĩnh vực giao thông vận tải
+[trang 53 - 88/100] 154623 - Thông tư số 09/2022/TT-NHNN Hướng dẫn về quản lý ngoại hối đối với hoạt động kinh doanh
+
+trò chơi điện tử có thưởng dành cho người nước ngoài
+Traceback (most recent call last):
+  File "/home/buncha/Document/ROAD2AI/VbplCrawler/example/crawl_to_docx.py", line 221, in <module>
+    main()
+    ~~~~^^
+  File "/home/buncha/Document/ROAD2AI/VbplCrawler/example/crawl_to_docx.py", line 208, in main
+    crawl_pages(
+    ~~~~~~~~~~~^
+        keyword=args.keyword,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        title_contains=title_contains,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/buncha/Document/ROAD2AI/VbplCrawler/example/crawl_to_docx.py", line 71, in crawl_pages
+    result = crawler.search(
+        keyword=keyword,
+        page_number=page_number,
+        page_size=page_size,
+    )
+  File "/home/buncha/Document/ROAD2AI/VbplCrawler/src/VbplCrawler/crawler.py", line 85, in search
+    data = self._parse_rsc_payload(response.text)
+  File "/home/buncha/Document/ROAD2AI/VbplCrawler/src/VbplCrawler/crawler.py", line 277, in _parse_rsc_payload
+    raise ValueError("Could not parse vbpl search response")
+ValueError: Could not parse vbpl search response

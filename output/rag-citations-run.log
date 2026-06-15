@@ -1,0 +1,452 @@
+Bỏ qua 284 câu đã trả lời, còn 1716
+Câu hỏi: 1716 (start_id=1)
+=== Citations only: retrieve + extract (batch=8, llm_top_k=10) ===
+  BM25 cache: /home/buncha/Document/ROAD2AI/output/bm25_corpus.pkl (36076 chunks)
+  Hybrid retrieve: dense + BM25 + rerank (pool=20, rrf_top_k=15, top_k=5, rrf_k=60)
+  Retrieved 8/1716
+  Done 8/1716 (retrieve + citations)
+  Retrieved 16/1716
+  Done 16/1716 (retrieve + citations)
+  Retrieved 24/1716
+  Done 24/1716 (retrieve + citations)
+  Retrieved 32/1716
+  Done 32/1716 (retrieve + citations)
+  Retrieved 40/1716
+  Done 40/1716 (retrieve + citations)
+  Retrieved 48/1716
+  Done 48/1716 (retrieve + citations)
+  Retrieved 56/1716
+  Done 56/1716 (retrieve + citations)
+  Retrieved 64/1716
+  Done 64/1716 (retrieve + citations)
+  Retrieved 72/1716
+  Done 72/1716 (retrieve + citations)
+  Retrieved 80/1716
+  Done 80/1716 (retrieve + citations)
+  Retrieved 88/1716
+  Done 88/1716 (retrieve + citations)
+  Retrieved 96/1716
+  Done 96/1716 (retrieve + citations)
+  Retrieved 104/1716
+  Done 104/1716 (retrieve + citations)
+  Retrieved 112/1716
+  Done 112/1716 (retrieve + citations)
+  Retrieved 120/1716
+  Done 120/1716 (retrieve + citations)
+  Retrieved 128/1716
+  Done 128/1716 (retrieve + citations)
+  Retrieved 136/1716
+  Done 136/1716 (retrieve + citations)
+Bỏ qua 420 câu đã trả lời, còn 1580
+Câu hỏi: 1580 (start_id=1)
+=== Citations only: retrieve + extract (batch=8, llm_top_k=10) ===
+  BM25 cache: /home/buncha/Document/ROAD2AI/output/bm25_corpus.pkl (36076 chunks)
+  Hybrid retrieve: dense + BM25 + rerank (pool=20, rrf_top_k=15, top_k=5, rrf_k=60)
+  Retrieved 8/1580
+  Done 8/1580 (retrieve + citations)
+  Retrieved 16/1580
+  Done 16/1580 (retrieve + citations)
+Bỏ qua 436 câu đã trả lời, còn 1564
+Câu hỏi: 1564 (start_id=1)
+=== Citations only: retrieve + extract (batch=8, llm_top_k=10) ===
+  BM25 cache: /home/buncha/Document/ROAD2AI/output/bm25_corpus.pkl (36076 chunks)
+  Hybrid retrieve: dense + BM25 + rerank (pool=20, rrf_top_k=15, top_k=5, rrf_k=60)
+  Retrieved 8/1564
+  Done 8/1564 (retrieve + citations)
+  Retrieved 16/1564
+  Done 16/1564 (retrieve + citations)
+  Retrieved 24/1564
+  Done 24/1564 (retrieve + citations)
+  Retrieved 32/1564
+  Done 32/1564 (retrieve + citations)
+  Retrieved 40/1564
+  Done 40/1564 (retrieve + citations)
+  Retrieved 48/1564
+  Done 48/1564 (retrieve + citations)
+  Retrieved 56/1564
+  Done 56/1564 (retrieve + citations)
+  Retrieved 64/1564
+  Done 64/1564 (retrieve + citations)
+  Retrieved 72/1564
+  Done 72/1564 (retrieve + citations)
+  Retrieved 80/1564
+  Done 80/1564 (retrieve + citations)
+  Retrieved 88/1564
+  Done 88/1564 (retrieve + citations)
+  Retrieved 96/1564
+  Done 96/1564 (retrieve + citations)
+  Retrieved 104/1564
+  Done 104/1564 (retrieve + citations)
+  Retrieved 112/1564
+  Done 112/1564 (retrieve + citations)
+  Retrieved 120/1564
+  Done 120/1564 (retrieve + citations)
+  Retrieved 128/1564
+  Done 128/1564 (retrieve + citations)
+  Retrieved 136/1564
+  Done 136/1564 (retrieve + citations)
+  Retrieved 144/1564
+  Done 144/1564 (retrieve + citations)
+  Retrieved 152/1564
+  Done 152/1564 (retrieve + citations)
+  Retrieved 160/1564
+  Done 160/1564 (retrieve + citations)
+  Retrieved 168/1564
+  Done 168/1564 (retrieve + citations)
+  Retrieved 176/1564
+  Done 176/1564 (retrieve + citations)
+  Retrieved 184/1564
+  Done 184/1564 (retrieve + citations)
+  Retrieved 192/1564
+  Done 192/1564 (retrieve + citations)
+  Retrieved 200/1564
+  Done 200/1564 (retrieve + citations)
+  Retrieved 208/1564
+  Done 208/1564 (retrieve + citations)
+  Retrieved 216/1564
+  Done 216/1564 (retrieve + citations)
+  Retrieved 224/1564
+  Done 224/1564 (retrieve + citations)
+  Retrieved 232/1564
+  Done 232/1564 (retrieve + citations)
+  Retrieved 240/1564
+  Done 240/1564 (retrieve + citations)
+  Retrieved 248/1564
+  Done 248/1564 (retrieve + citations)
+  Retrieved 256/1564
+  Done 256/1564 (retrieve + citations)
+  Retrieved 264/1564
+  Done 264/1564 (retrieve + citations)
+  Retrieved 272/1564
+  Done 272/1564 (retrieve + citations)
+  Retrieved 280/1564
+  Done 280/1564 (retrieve + citations)
+  Retrieved 288/1564
+  Done 288/1564 (retrieve + citations)
+  Retrieved 296/1564
+  Done 296/1564 (retrieve + citations)
+  Retrieved 304/1564
+  Done 304/1564 (retrieve + citations)
+  Retrieved 312/1564
+  Done 312/1564 (retrieve + citations)
+  Retrieved 320/1564
+  Done 320/1564 (retrieve + citations)
+  Retrieved 328/1564
+  Done 328/1564 (retrieve + citations)
+  Retrieved 336/1564
+  Done 336/1564 (retrieve + citations)
+  Retrieved 344/1564
+  Done 344/1564 (retrieve + citations)
+  Retrieved 352/1564
+  Done 352/1564 (retrieve + citations)
+  Retrieved 360/1564
+  Done 360/1564 (retrieve + citations)
+  Retrieved 368/1564
+  Done 368/1564 (retrieve + citations)
+  Retrieved 376/1564
+  Done 376/1564 (retrieve + citations)
+  Retrieved 384/1564
+  Done 384/1564 (retrieve + citations)
+  Retrieved 392/1564
+  Done 392/1564 (retrieve + citations)
+  Retrieved 400/1564
+  Done 400/1564 (retrieve + citations)
+  Retrieved 408/1564
+  Done 408/1564 (retrieve + citations)
+  Retrieved 416/1564
+  Done 416/1564 (retrieve + citations)
+  Retrieved 424/1564
+  Done 424/1564 (retrieve + citations)
+  Retrieved 432/1564
+  Done 432/1564 (retrieve + citations)
+  Retrieved 440/1564
+  Done 440/1564 (retrieve + citations)
+  Retrieved 448/1564
+  Done 448/1564 (retrieve + citations)
+  Retrieved 456/1564
+  Done 456/1564 (retrieve + citations)
+  Retrieved 464/1564
+  Done 464/1564 (retrieve + citations)
+  Retrieved 472/1564
+  Done 472/1564 (retrieve + citations)
+  Retrieved 480/1564
+  Done 480/1564 (retrieve + citations)
+  Retrieved 488/1564
+  Done 488/1564 (retrieve + citations)
+  Retrieved 496/1564
+  Done 496/1564 (retrieve + citations)
+  Retrieved 504/1564
+  Done 504/1564 (retrieve + citations)
+  Retrieved 512/1564
+  Done 512/1564 (retrieve + citations)
+  Retrieved 520/1564
+  Done 520/1564 (retrieve + citations)
+  Retrieved 528/1564
+  Done 528/1564 (retrieve + citations)
+  Retrieved 536/1564
+  Done 536/1564 (retrieve + citations)
+  Retrieved 544/1564
+  Done 544/1564 (retrieve + citations)
+  Retrieved 552/1564
+  Done 552/1564 (retrieve + citations)
+  Retrieved 560/1564
+  Done 560/1564 (retrieve + citations)
+  Retrieved 568/1564
+  Done 568/1564 (retrieve + citations)
+  Retrieved 576/1564
+  Done 576/1564 (retrieve + citations)
+  Retrieved 584/1564
+  Done 584/1564 (retrieve + citations)
+  Retrieved 592/1564
+  Done 592/1564 (retrieve + citations)
+  Retrieved 600/1564
+  Done 600/1564 (retrieve + citations)
+  Retrieved 608/1564
+  Done 608/1564 (retrieve + citations)
+  Retrieved 616/1564
+  Done 616/1564 (retrieve + citations)
+  Retrieved 624/1564
+  Done 624/1564 (retrieve + citations)
+  Retrieved 632/1564
+  Done 632/1564 (retrieve + citations)
+  Retrieved 640/1564
+  Done 640/1564 (retrieve + citations)
+  Retrieved 648/1564
+  Done 648/1564 (retrieve + citations)
+  Retrieved 656/1564
+  Done 656/1564 (retrieve + citations)
+  Retrieved 664/1564
+  Done 664/1564 (retrieve + citations)
+  Retrieved 672/1564
+  Done 672/1564 (retrieve + citations)
+  Retrieved 680/1564
+  Done 680/1564 (retrieve + citations)
+  Retrieved 688/1564
+  Done 688/1564 (retrieve + citations)
+  Retrieved 696/1564
+  Done 696/1564 (retrieve + citations)
+Bỏ qua 1132 câu đã trả lời, còn 868
+Câu hỏi: 868 (start_id=1)
+=== Citations only: retrieve + extract (batch=8, llm_top_k=10) ===
+  BM25 cache: /home/buncha/Document/ROAD2AI/output/bm25_corpus.pkl (36076 chunks)
+  Hybrid retrieve: dense + BM25 + rerank (pool=20, rrf_top_k=15, top_k=5, rrf_k=60)
+  Retrieved 8/868
+  Done 8/868 (retrieve + citations)
+  Retrieved 16/868
+  Done 16/868 (retrieve + citations)
+  Retrieved 24/868
+  Done 24/868 (retrieve + citations)
+  Retrieved 32/868
+  Done 32/868 (retrieve + citations)
+  Retrieved 40/868
+  Done 40/868 (retrieve + citations)
+  Retrieved 48/868
+  Done 48/868 (retrieve + citations)
+  Retrieved 56/868
+  Done 56/868 (retrieve + citations)
+  Retrieved 64/868
+  Done 64/868 (retrieve + citations)
+  Retrieved 72/868
+  Done 72/868 (retrieve + citations)
+  Retrieved 80/868
+  Done 80/868 (retrieve + citations)
+  Retrieved 88/868
+  Done 88/868 (retrieve + citations)
+  Retrieved 96/868
+  Done 96/868 (retrieve + citations)
+  Retrieved 104/868
+  Done 104/868 (retrieve + citations)
+  Retrieved 112/868
+  Done 112/868 (retrieve + citations)
+  Retrieved 120/868
+  Done 120/868 (retrieve + citations)
+  Retrieved 128/868
+  Done 128/868 (retrieve + citations)
+  Retrieved 136/868
+  Done 136/868 (retrieve + citations)
+  Retrieved 144/868
+  Done 144/868 (retrieve + citations)
+  Retrieved 152/868
+  Done 152/868 (retrieve + citations)
+  Retrieved 160/868
+  Done 160/868 (retrieve + citations)
+  Retrieved 168/868
+  Done 168/868 (retrieve + citations)
+  Retrieved 176/868
+  Done 176/868 (retrieve + citations)
+  Retrieved 184/868
+  Done 184/868 (retrieve + citations)
+  Retrieved 192/868
+  Done 192/868 (retrieve + citations)
+  Retrieved 200/868
+  Done 200/868 (retrieve + citations)
+  Retrieved 208/868
+  Done 208/868 (retrieve + citations)
+  Retrieved 216/868
+  Done 216/868 (retrieve + citations)
+  Retrieved 224/868
+  Done 224/868 (retrieve + citations)
+  Retrieved 232/868
+  Done 232/868 (retrieve + citations)
+  Retrieved 240/868
+  Done 240/868 (retrieve + citations)
+  Retrieved 248/868
+  Done 248/868 (retrieve + citations)
+  Retrieved 256/868
+  Done 256/868 (retrieve + citations)
+  Retrieved 264/868
+  Done 264/868 (retrieve + citations)
+  Retrieved 272/868
+  Done 272/868 (retrieve + citations)
+  Retrieved 280/868
+  Done 280/868 (retrieve + citations)
+  Retrieved 288/868
+  Done 288/868 (retrieve + citations)
+  Retrieved 296/868
+  Done 296/868 (retrieve + citations)
+  Retrieved 304/868
+  Done 304/868 (retrieve + citations)
+  Retrieved 312/868
+  Done 312/868 (retrieve + citations)
+  Retrieved 320/868
+  Done 320/868 (retrieve + citations)
+  Retrieved 328/868
+  Done 328/868 (retrieve + citations)
+  Retrieved 336/868
+  Done 336/868 (retrieve + citations)
+  Retrieved 344/868
+  Done 344/868 (retrieve + citations)
+  Retrieved 352/868
+  Done 352/868 (retrieve + citations)
+  Retrieved 360/868
+  Done 360/868 (retrieve + citations)
+  Retrieved 368/868
+  Done 368/868 (retrieve + citations)
+  Retrieved 376/868
+  Done 376/868 (retrieve + citations)
+  Retrieved 384/868
+  Done 384/868 (retrieve + citations)
+  Retrieved 392/868
+  Done 392/868 (retrieve + citations)
+  Retrieved 400/868
+  Done 400/868 (retrieve + citations)
+  Retrieved 408/868
+  Done 408/868 (retrieve + citations)
+  Retrieved 416/868
+  Done 416/868 (retrieve + citations)
+  Retrieved 424/868
+  Done 424/868 (retrieve + citations)
+  Retrieved 432/868
+  Done 432/868 (retrieve + citations)
+  Retrieved 440/868
+  Done 440/868 (retrieve + citations)
+  Retrieved 448/868
+  Done 448/868 (retrieve + citations)
+  Retrieved 456/868
+  Done 456/868 (retrieve + citations)
+  Retrieved 464/868
+  Done 464/868 (retrieve + citations)
+  Retrieved 472/868
+  Done 472/868 (retrieve + citations)
+  Retrieved 480/868
+  Done 480/868 (retrieve + citations)
+  Retrieved 488/868
+  Done 488/868 (retrieve + citations)
+  Retrieved 496/868
+  Done 496/868 (retrieve + citations)
+  Retrieved 504/868
+  Done 504/868 (retrieve + citations)
+  Retrieved 512/868
+  Done 512/868 (retrieve + citations)
+  Retrieved 520/868
+  Done 520/868 (retrieve + citations)
+  Retrieved 528/868
+  Done 528/868 (retrieve + citations)
+  Retrieved 536/868
+  Done 536/868 (retrieve + citations)
+  Retrieved 544/868
+  Done 544/868 (retrieve + citations)
+  Retrieved 552/868
+  Done 552/868 (retrieve + citations)
+  Retrieved 560/868
+  Done 560/868 (retrieve + citations)
+  Retrieved 568/868
+  Done 568/868 (retrieve + citations)
+  Retrieved 576/868
+  Done 576/868 (retrieve + citations)
+  Retrieved 584/868
+  Done 584/868 (retrieve + citations)
+  Retrieved 592/868
+  Done 592/868 (retrieve + citations)
+  Retrieved 600/868
+  Done 600/868 (retrieve + citations)
+  Retrieved 608/868
+  Done 608/868 (retrieve + citations)
+  Retrieved 616/868
+  Done 616/868 (retrieve + citations)
+  Retrieved 624/868
+  Done 624/868 (retrieve + citations)
+  Retrieved 632/868
+  Done 632/868 (retrieve + citations)
+  Retrieved 640/868
+  Done 640/868 (retrieve + citations)
+  Retrieved 648/868
+  Done 648/868 (retrieve + citations)
+  Retrieved 656/868
+  Done 656/868 (retrieve + citations)
+  Retrieved 664/868
+  Done 664/868 (retrieve + citations)
+  Retrieved 672/868
+  Done 672/868 (retrieve + citations)
+  Retrieved 680/868
+  Done 680/868 (retrieve + citations)
+  Retrieved 688/868
+  Done 688/868 (retrieve + citations)
+  Retrieved 696/868
+  Done 696/868 (retrieve + citations)
+  Retrieved 704/868
+  Done 704/868 (retrieve + citations)
+  Retrieved 712/868
+  Done 712/868 (retrieve + citations)
+  Retrieved 720/868
+  Done 720/868 (retrieve + citations)
+  Retrieved 728/868
+  Done 728/868 (retrieve + citations)
+  Retrieved 736/868
+  Done 736/868 (retrieve + citations)
+  Retrieved 744/868
+  Done 744/868 (retrieve + citations)
+  Retrieved 752/868
+  Done 752/868 (retrieve + citations)
+  Retrieved 760/868
+  Done 760/868 (retrieve + citations)
+  Retrieved 768/868
+  Done 768/868 (retrieve + citations)
+  Retrieved 776/868
+  Done 776/868 (retrieve + citations)
+  Retrieved 784/868
+  Done 784/868 (retrieve + citations)
+  Retrieved 792/868
+  Done 792/868 (retrieve + citations)
+  Retrieved 800/868
+  Done 800/868 (retrieve + citations)
+  Retrieved 808/868
+  Done 808/868 (retrieve + citations)
+  Retrieved 816/868
+  Done 816/868 (retrieve + citations)
+  Retrieved 824/868
+  Done 824/868 (retrieve + citations)
+  Retrieved 832/868
+  Done 832/868 (retrieve + citations)
+  Retrieved 840/868
+  Done 840/868 (retrieve + citations)
+  Retrieved 848/868
+  Done 848/868 (retrieve + citations)
+  Retrieved 856/868
+  Done 856/868 (retrieve + citations)
+  Retrieved 864/868
+  Done 864/868 (retrieve + citations)
+  Retrieved 868/868
+  Done 868/868 (retrieve + citations)
+Citations xong: 868 câu (4015.8s)
+Đã lưu: test/R2AIStage1_answers.json (868 câu)

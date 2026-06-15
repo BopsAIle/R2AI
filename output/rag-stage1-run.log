@@ -1,0 +1,69 @@
+Bỏ qua 160 câu đã trả lời, còn 1840
+Câu hỏi: 1840 (start_id=1)
+=== Pipeline: retrieve + generate (batch=4, gen_batch=2) ===
+  BM25 cache: /home/buncha/Document/ROAD2AI/output/bm25_corpus.pkl (36076 chunks)
+  Hybrid retrieve: dense + BM25 + rerank (pool=20, rrf_top_k=15, top_k=5, rrf_k=60)
+  Retrieved 4/1840
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.44s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.54s/it]
+  Done 4/1840 (retrieve + generate)
+  Retrieved 8/1840
+  Done 8/1840 (retrieve + generate)
+  Retrieved 12/1840
+  Done 12/1840 (retrieve + generate)
+  Retrieved 16/1840
+  Done 16/1840 (retrieve + generate)
+  Retrieved 20/1840
+  Done 20/1840 (retrieve + generate)
+  Retrieved 24/1840
+  Done 24/1840 (retrieve + generate)
+  Retrieved 28/1840
+  Done 28/1840 (retrieve + generate)
+  Retrieved 32/1840
+  Done 32/1840 (retrieve + generate)
+  Retrieved 36/1840
+  Done 36/1840 (retrieve + generate)
+  Retrieved 40/1840
+  Done 40/1840 (retrieve + generate)
+  Retrieved 44/1840
+  Done 44/1840 (retrieve + generate)
+  Retrieved 48/1840
+  Done 48/1840 (retrieve + generate)
+  Retrieved 52/1840
+  Done 52/1840 (retrieve + generate)
+  Retrieved 56/1840
+  Done 56/1840 (retrieve + generate)
+  Retrieved 60/1840
+  Done 60/1840 (retrieve + generate)
+  Retrieved 64/1840
+  Done 64/1840 (retrieve + generate)
+  Retrieved 68/1840
+  Done 68/1840 (retrieve + generate)
+  Retrieved 72/1840
+  Done 72/1840 (retrieve + generate)
+  Retrieved 76/1840
+  Done 76/1840 (retrieve + generate)
+  Retrieved 80/1840
+  Done 80/1840 (retrieve + generate)
+  Retrieved 84/1840
+  Done 84/1840 (retrieve + generate)
+  Retrieved 88/1840
+  Done 88/1840 (retrieve + generate)
+  Retrieved 92/1840
+  Done 92/1840 (retrieve + generate)
+  Retrieved 96/1840
+  Done 96/1840 (retrieve + generate)
+  Retrieved 100/1840
+  Done 100/1840 (retrieve + generate)
+  Retrieved 104/1840
+  Done 104/1840 (retrieve + generate)
+  Retrieved 108/1840
+  Done 108/1840 (retrieve + generate)
+  Retrieved 112/1840
+  Done 112/1840 (retrieve + generate)
+  Retrieved 116/1840
+  Done 116/1840 (retrieve + generate)
+  Retrieved 120/1840
+  Done 120/1840 (retrieve + generate)
+  Retrieved 124/1840
+  Done 124/1840 (retrieve + generate)
+  Retrieved 128/1840
