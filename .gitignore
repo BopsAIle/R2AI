@@ -1,0 +1,8 @@
+# Output & intermediate data (regeneratable)
+output/
+test/
+qdrant_storage/
+*.pkl
+*.npz
+*.pt
+*.pth
