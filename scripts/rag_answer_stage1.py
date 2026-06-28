@@ -22,7 +22,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
-from bm25_retrieval import hybrid_retrieve_one, load_or_build_bm25_index, merge_hybrid_results
+from bm25_retrieval import hybrid_retrieve_one, load_or_build_bm25_index
 from qdrant_config import (
     add_qdrant_args,
     get_collection_name,
@@ -33,13 +33,27 @@ from qdrant_config import (
     query_dense,
     query_sparse_bm25,
 )
-from rerank_retrieval import dense_hits_to_chunks, load_reranker, rerank_chunks
+from rerank_retrieval import (
+    DEFAULT_PRIMARY_WEIGHT,
+    DEFAULT_SUB_WEIGHT,
+    dense_hits_to_chunks,
+    load_reranker,
+    rerank_chunks_hybrid,
+)
 from query_decompose import (
     DEFAULT_THRESHOLD_1,
     DEFAULT_THRESHOLD_2,
     batch_decompose_questions,
     load_embed_tokenizer,
     plan_queries,
+    resolve_queries,
+)
+from subquery_loader import (
+    SubquerySpec,
+    load_subquery_index,
+    rerank_primary_and_subs,
+    retrieval_queries,
+    subquery_map_from_index,
 )
 
 DEFAULT_QUESTIONS = ROOT / "test" / "R2AIStage1DATA.json"
@@ -48,6 +62,7 @@ DEFAULT_LLM_MODEL = ROOT / "models" / "Vi-Qwen2-1.5B-RAG"
 DEFAULT_RERANK_MODEL = ROOT / "models" / "Vietnamese_Reranker"
 DEFAULT_OUTPUT = ROOT / "test" / "R2AIStage1_answers.json"
 DEFAULT_RETRIEVED = ROOT / "test" / "R2AIStage1_retrieved.json"
+DEFAULT_SUBQUERIES = ROOT / "test" / "R2AIStage1DATA_subqueries.json"
 DEFAULT_BM25_CACHE = ROOT / "output" / "bm25_corpus.pkl"
 
 VI_QWEN_SYSTEM = (
@@ -73,6 +88,46 @@ _CODE_RE = re.compile(
     r"\b(\d{1,3}/\d{4}/(?:QH\d+|NĐ-CP|TT-[A-Z]+|QĐ-[A-Z]+|NQ-HĐND))\b",
     re.IGNORECASE,
 )
+_CODE_ALT_PATTERNS = (
+    re.compile(r"\b(\d+/QĐ-[A-Z]+)\b", re.IGNORECASE),
+    re.compile(r"\b(\d+/VBHN-[A-Z]+)\b", re.IGNORECASE),
+    re.compile(r"\b(\d+/NQ-[A-Z]+)\b", re.IGNORECASE),
+    re.compile(r"\b(\d+/TT-[A-Z]+)\b", re.IGNORECASE),
+)
+_NON_DIEU_ARTICLE_LABELS = frozenset({"phụ lục", "phu luc", "chương", "mục"})
+
+
+@dataclass
+class FilterChunkStats:
+    examined: int = 0
+    accepted: int = 0
+    rejected_no_code: int = 0
+    rejected_no_title: int = 0
+    rejected_bad_title: int = 0
+
+    def record_rejection(self, reason: str) -> None:
+        if reason == "no_code":
+            self.rejected_no_code += 1
+        elif reason == "no_title":
+            self.rejected_no_title += 1
+        elif reason == "bad_title":
+            self.rejected_bad_title += 1
+
+    @property
+    def rejected(self) -> int:
+        return self.examined - self.accepted
+
+    def log_summary(self, prefix: str = "") -> None:
+        if self.examined == 0:
+            return
+        pct = 100.0 * self.rejected / self.examined
+        print(
+            f"{prefix}filter_valid: {self.accepted}/{self.examined} kept "
+            f"({pct:.1f}% rejected — "
+            f"no_code={self.rejected_no_code}, "
+            f"no_title={self.rejected_no_title}, "
+            f"bad_title={self.rejected_bad_title})"
+        )
 
 
 def parse_args() -> argparse.Namespace:
@@ -119,7 +174,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--no-bm25",
         action="store_true",
-        help="Disable hybrid retrieval (dense + BM25 + RRF); default is hybrid on",
+        help="Disable hybrid retrieval (dense + BM25 + weightRRF); default is hybrid on",
     )
     p.add_argument(
         "--bm25-cache",
@@ -130,20 +185,20 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--retrieve-pool",
         type=int,
-        default=15,
-        help="Candidate pool per retrieval method (ANN / BM25) before fusion",
+        default=10,
+        help="Top chunks per method before RRF (dense=10, BM25=10)",
     )
     p.add_argument(
         "--rrf-top-k",
         type=int,
-        default=20,
-        help="Chunks kept after RRF fusion, before rerank (hybrid only)",
+        default=15,
+        help="Chunks kept after weightRRF fusion (0.4 dense + 0.6 BM25), before rerank",
     )
     p.add_argument(
         "--rrf-k",
         type=int,
         default=60,
-        help="RRF constant k for hybrid score fusion",
+        help="weightRRF constant k for hybrid score fusion (dense=0.4, BM25=0.6)",
     )
     p.add_argument(
         "--rerank-model",
@@ -162,6 +217,34 @@ def parse_args() -> argparse.Namespace:
         "--no-subquery",
         action="store_true",
         help="Disable sub-query decomposition for long questions",
+    )
+    p.add_argument(
+        "--use-llm-subquery",
+        action="store_true",
+        help="Use LLM for sub-query decomposition (legacy; default is rule-based)",
+    )
+    p.add_argument(
+        "--subquery-cache",
+        type=Path,
+        default=DEFAULT_SUBQUERIES,
+        help="Precomputed sub-query JSON (R2AIStage1DATA_subqueries.json)",
+    )
+    p.add_argument(
+        "--hybrid-rerank",
+        action="store_true",
+        help="Rerank with queries[0]*primary_weight + mean(sub)*sub_weight",
+    )
+    p.add_argument(
+        "--primary-weight",
+        type=float,
+        default=DEFAULT_PRIMARY_WEIGHT,
+        help="Weight for first query in hybrid rerank (default: 0.7)",
+    )
+    p.add_argument(
+        "--sub-weight",
+        type=float,
+        default=DEFAULT_SUB_WEIGHT,
+        help="Weight for mean of sub-query scores in hybrid rerank (default: 0.3)",
     )
     p.add_argument(
         "--token-threshold-1",
@@ -226,34 +309,101 @@ def _title_from_text(text: str, law_code: str) -> str:
     return first_line
 
 
+def _code_from_text(text: str) -> str:
+    if not text:
+        return ""
+    head = text[:600]
+    match = _CODE_RE.search(head)
+    if match:
+        return match.group(1)
+    for pattern in _CODE_ALT_PATTERNS:
+        match = pattern.search(head)
+        if match:
+            return match.group(1)
+    return ""
+
+
 def resolve_law_code(chunk: dict) -> str:
-    code = str(chunk.get("law_code") or "").strip()
-    if code:
-        return code
-    text = chunk.get("text") or ""
-    match = _CODE_RE.search(text[:400])
-    return match.group(1) if match else ""
+    for key in ("law_code", "document_number"):
+        code = str(chunk.get(key) or "").strip()
+        if code:
+            return code
+    return _code_from_text(chunk.get("text") or "")
+
+
+def _title_from_law_type_prefix(text: str, law_code: str) -> str:
+    if not text:
+        return ""
+    head = text[:600]
+    if law_code:
+        pattern = re.compile(
+            rf"{re.escape(law_code)}\s+((?:Luật|Bộ luật|Nghị định|Thông tư|Quyết định|Nghị quyết|Văn bản hợp nhất)[^\n.]{{3,200}})",
+            re.IGNORECASE,
+        )
+        match = pattern.search(head)
+        if match:
+            return match.group(1).strip(" .")
+    prefix_match = re.match(
+        r"^((?:Luật|Bộ luật|Nghị định|Thông tư|Quyết định|Nghị quyết|Văn bản hợp nhất)[^\n]{3,200})",
+        head.strip(),
+        re.IGNORECASE,
+    )
+    if prefix_match:
+        return prefix_match.group(1).strip(" .")
+    return ""
 
 
 def resolve_law_title(chunk: dict) -> str:
-    title = str(chunk.get("law_title") or "").strip()
     law_code = resolve_law_code(chunk)
-    if not _looks_bad_title(title):
-        return title
+    for key in ("law_title", "document_title"):
+        title = str(chunk.get(key) or "").strip()
+        if not _looks_bad_title(title):
+            return title
     title = _title_from_file_name(chunk.get("file_name") or "", law_code)
     if not _looks_bad_title(title):
         return title
-    return _title_from_text(chunk.get("text") or "", law_code)
+    text = chunk.get("text") or ""
+    title = _title_from_text(text, law_code)
+    if not _looks_bad_title(title):
+        return title
+    title = _title_from_law_type_prefix(text, law_code)
+    if not _looks_bad_title(title):
+        return title
+    return title
+
+
+def chunk_reject_reason(chunk: dict) -> str | None:
+    law_code = resolve_law_code(chunk)
+    if not law_code:
+        return "no_code"
+    law_title = resolve_law_title(chunk)
+    if not law_title:
+        return "no_title"
+    if _looks_bad_title(law_title):
+        return "bad_title"
+    return None
 
 
 def is_valid_chunk(chunk: dict) -> bool:
-    law_code = resolve_law_code(chunk)
-    law_title = resolve_law_title(chunk)
-    return bool(law_code) and bool(law_title) and not _looks_bad_title(law_title)
+    return chunk_reject_reason(chunk) is None
 
 
-def filter_valid_chunks(chunks: list[dict], limit: int | None = None) -> list[dict]:
-    valid = [c for c in chunks if is_valid_chunk(c)]
+def filter_valid_chunks(
+    chunks: list[dict],
+    limit: int | None = None,
+    stats: FilterChunkStats | None = None,
+) -> list[dict]:
+    valid: list[dict] = []
+    for chunk in chunks:
+        reason = chunk_reject_reason(chunk)
+        if stats is not None:
+            stats.examined += 1
+            if reason:
+                stats.record_rejection(reason)
+            else:
+                stats.accepted += 1
+        if reason is None:
+            valid.append(chunk)
     if limit is not None:
         valid = valid[:limit]
     for rank, chunk in enumerate(valid, start=1):
@@ -261,15 +411,62 @@ def filter_valid_chunks(chunks: list[dict], limit: int | None = None) -> list[di
     return valid
 
 
-def resolve_article_label(chunk: dict) -> str | None:
-    article = str(chunk.get("article_number") or "").strip()
+def _normalize_article_label(raw: str) -> str | None:
+    raw = str(raw or "").strip()
+    if not raw:
+        return None
+    lower = raw.lower()
+    if lower.startswith("điều "):
+        return raw
+    if lower in _NON_DIEU_ARTICLE_LABELS:
+        return raw[0].upper() + raw[1:] if raw else raw
+    return f"Điều {raw}"
+
+
+def _article_parts(raw: str) -> list[str]:
+    raw = str(raw or "").strip()
+    if not raw:
+        return []
+    if raw.lower().startswith("điều "):
+        raw = raw[5:].strip()
+    if "_" in raw:
+        return [part for part in raw.split("_") if part.strip()]
+    return [raw]
+
+
+def expand_article_labels(chunk: dict) -> list[str]:
+    labels: list[str] = []
+    seen: set[str] = set()
+
+    def add_raw(raw: str) -> None:
+        for part in _article_parts(raw):
+            label = _normalize_article_label(part)
+            if label and label not in seen:
+                seen.add(label)
+                labels.append(label)
+
+    article = str(chunk.get("article_number") or chunk.get("article_no") or "").strip()
     if article:
-        return f"Điều {article}" if not article.lower().startswith("điều") else article
-    text = chunk.get("text") or ""
-    match = _ARTICLE_RE.search(text[:800])
-    if match:
-        return f"Điều {match.group(1)}"
-    return None
+        add_raw(article)
+
+    list_article = chunk.get("list_article")
+    if list_article:
+        items = list_article if isinstance(list_article, list) else [list_article]
+        for item in items:
+            if item:
+                add_raw(str(item))
+
+    if not labels:
+        text = chunk.get("text") or ""
+        for match in _ARTICLE_RE.finditer(text[:800]):
+            add_raw(match.group(1))
+
+    return labels
+
+
+def resolve_article_label(chunk: dict) -> str | None:
+    labels = expand_article_labels(chunk)
+    return labels[0] if labels else None
 
 
 def chunk_to_doc_ref(chunk: dict) -> str | None:
@@ -280,15 +477,17 @@ def chunk_to_doc_ref(chunk: dict) -> str | None:
     return f"{law_code}|{law_title}"
 
 
-def chunk_to_article_ref(chunk: dict) -> str | None:
+def chunk_to_article_refs(chunk: dict) -> list[str]:
     if not is_valid_chunk(chunk):
-        return None
+        return []
     law_code = resolve_law_code(chunk)
     law_title = resolve_law_title(chunk)
-    article = resolve_article_label(chunk)
-    if not article:
-        return None
-    return f"{law_code}|{law_title}|{article}"
+    return [f"{law_code}|{law_title}|{article}" for article in expand_article_labels(chunk)]
+
+
+def chunk_to_article_ref(chunk: dict) -> str | None:
+    refs = chunk_to_article_refs(chunk)
+    return refs[0] if refs else None
 
 
 def extract_citations(chunks: list[dict]) -> tuple[list[str], list[str]]:
@@ -301,10 +500,10 @@ def extract_citations(chunks: list[dict]) -> tuple[list[str], list[str]]:
         if doc_ref and doc_ref not in seen_docs:
             seen_docs.add(doc_ref)
             relevant_docs.append(doc_ref)
-        article_ref = chunk_to_article_ref(chunk)
-        if article_ref and article_ref not in seen_articles:
-            seen_articles.add(article_ref)
-            relevant_articles.append(article_ref)
+        for article_ref in chunk_to_article_refs(chunk):
+            if article_ref not in seen_articles:
+                seen_articles.add(article_ref)
+                relevant_articles.append(article_ref)
     return relevant_docs, relevant_articles
 
 
@@ -328,6 +527,11 @@ def load_questions(path: Path, start_id: int, limit: int | None) -> list[dict]:
     if limit:
         items = items[:limit]
     return items
+
+
+def load_subquery_cache(path: Path | None) -> dict[int, list[str]]:
+    """Backward-compatible: id -> retrieval query list."""
+    return subquery_map_from_index(load_subquery_index(path))
 
 
 class RetrievalEngine:
@@ -355,9 +559,13 @@ class RetrievalEngine:
         rerank_batch: int = 32,
         enable_subquery: bool = True,
         sub_query_map: dict[int, list[str]] | None = None,
+        subquery_index: dict[int, SubquerySpec] | None = None,
         token_threshold_1: int = DEFAULT_THRESHOLD_1,
         token_threshold_2: int = DEFAULT_THRESHOLD_2,
         embed_tokenizer=None,
+        hybrid_rerank: bool = False,
+        primary_weight: float = DEFAULT_PRIMARY_WEIGHT,
+        sub_weight: float = DEFAULT_SUB_WEIGHT,
     ) -> None:
         self.embed_model_path = embed_model_path
         self.qdrant_url = qdrant_url
@@ -379,9 +587,13 @@ class RetrievalEngine:
         self.rerank_batch = rerank_batch
         self.enable_subquery = enable_subquery
         self.sub_query_map = sub_query_map or {}
+        self.subquery_index = subquery_index or {}
         self.token_threshold_1 = token_threshold_1
         self.token_threshold_2 = token_threshold_2
         self.embed_tokenizer = embed_tokenizer
+        self.hybrid_rerank = hybrid_rerank
+        self.primary_weight = primary_weight
+        self.sub_weight = sub_weight
 
         self.fusion_top_k = rrf_top_k if (use_bm25 and use_rerank) else top_k
         self.ann_limit = retrieve_pool if (use_bm25 or use_rerank) else top_k
@@ -392,6 +604,7 @@ class RetrievalEngine:
         self.bm25 = None
         self.corpus = None
         self._on_gpu = False
+        self.filter_stats = FilterChunkStats()
 
     def load(self) -> None:
         if self.client is not None:
@@ -409,12 +622,14 @@ class RetrievalEngine:
                 print(
                     f"  Hybrid retrieve: dense + {bm25_label} + rerank "
                     f"(pool={self.pool_size}, rrf_top_k={self.rrf_top_k}, "
-                    f"top_k={self.top_k}, rrf_k={self.rrf_k})"
+                    f"top_k={self.top_k}, weightRRF k={self.rrf_k}, "
+                    f"dense=0.4, bm25=0.6)"
                 )
             else:
                 print(
                     f"  Hybrid retrieve: dense + {bm25_label} "
-                    f"(pool={self.pool_size}, top_k={self.top_k}, rrf_k={self.rrf_k})"
+                    f"(pool={self.pool_size}, top_k={self.top_k}, "
+                    f"weightRRF k={self.rrf_k}, dense=0.4, bm25=0.6)"
                 )
         elif self.use_rerank:
             print(f"  Dense retrieve + rerank (pool={self.pool_size}, top_k={self.top_k})")
@@ -460,6 +675,32 @@ class RetrievalEngine:
         self.bm25 = None
         self.corpus = None
 
+    def _retrieval_query(self, qid: int, question: str) -> str:
+        """Single query for 10 dense + 10 BM25 + RRF 15 (sub-queries only at rerank)."""
+        spec = self.subquery_index.get(qid)
+        if spec is not None and spec.original_question:
+            return spec.original_question
+        return question
+
+    def _rerank_queries(self, qid: int, question: str) -> tuple[str, list[str]]:
+        spec = self.subquery_index.get(qid)
+        if spec is not None:
+            return rerank_primary_and_subs(spec, question)
+        if self.enable_subquery and qid in self.sub_query_map:
+            subs = self.sub_query_map[qid]
+            if len(subs) > 1:
+                return question, list(subs)
+        if self.enable_subquery:
+            queries = resolve_queries(
+                question,
+                self.embed_tokenizer,
+                threshold_1=self.token_threshold_1,
+                threshold_2=self.token_threshold_2,
+            )
+            if len(queries) > 1:
+                return question, list(queries)
+        return question, []
+
     def retrieve_one(
         self,
         q_item: dict,
@@ -470,86 +711,71 @@ class RetrievalEngine:
 
         question = q_item["question"]
         qid = q_item["id"]
+        query = self._retrieval_query(qid, question)
 
-        if self.enable_subquery and qid in self.sub_query_map:
-            queries = self.sub_query_map[qid]
-        elif self.enable_subquery and self.embed_tokenizer is not None:
-            _, queries = plan_queries(
-                question,
-                self.embed_tokenizer,
-                threshold_1=self.token_threshold_1,
-                threshold_2=self.token_threshold_2,
-            )
-            queries = queries or [question]
+        if query_vectors and query in query_vectors:
+            vec_list = query_vectors[query]
         else:
-            queries = [question]
+            encoded = self.embed_model.encode(
+                [query], normalize_embeddings=True, show_progress_bar=False
+            )[0]
+            vec_list = encoded.tolist()
 
-        chunk_lists: list[list[dict]] = []
-        for query in queries:
-            if query_vectors and query in query_vectors:
-                vec_list = query_vectors[query]
-            else:
-                encoded = self.embed_model.encode(
-                    [query], normalize_embeddings=True, show_progress_bar=False
-                )[0]
-                vec_list = encoded.tolist()
-
-            hits = query_dense(
-                self.client,
-                self.collection,
-                vec_list,
-                limit=self.ann_limit,
-                vector_name=self.vector_name,
-            )
-            if self.use_bm25:
-                sparse_hits = None
-                if self.use_qdrant_bm25:
-                    sparse_res = query_sparse_bm25(
-                        self.client,
-                        self.collection,
-                        query,
-                        limit=self.pool_size,
-                        sparse_vector_name=self.sparse_vector_name,
-                    )
-                    sparse_hits = sparse_res.points
-                chunks = hybrid_retrieve_one(
+        hits = query_dense(
+            self.client,
+            self.collection,
+            vec_list,
+            limit=self.ann_limit,
+            vector_name=self.vector_name,
+        )
+        if self.use_bm25:
+            sparse_hits = None
+            if self.use_qdrant_bm25:
+                sparse_res = query_sparse_bm25(
+                    self.client,
+                    self.collection,
                     query,
-                    dense_hits=hits.points,
-                    bm25=self.bm25,
-                    corpus=self.corpus,
-                    sparse_hits=sparse_hits,
-                    top_k=self.fusion_top_k,
-                    pool_size=self.pool_size,
-                    rrf_k=self.rrf_k,
+                    limit=self.pool_size,
+                    sparse_vector_name=self.sparse_vector_name,
                 )
-            else:
-                chunks = dense_hits_to_chunks(hits.points)[: self.fusion_top_k]
-            chunk_lists.append(chunks)
-
-        if len(chunk_lists) > 1:
-            chunks = merge_hybrid_results(
-                chunk_lists,
-                rrf_k=self.rrf_k,
+                sparse_hits = sparse_res.points
+            chunks = hybrid_retrieve_one(
+                query,
+                dense_hits=hits.points,
+                bm25=self.bm25,
+                corpus=self.corpus,
+                sparse_hits=sparse_hits,
                 top_k=self.fusion_top_k,
+                pool_size=self.pool_size,
+                rrf_k=self.rrf_k,
             )
         else:
-            chunks = chunk_lists[0] if chunk_lists else []
+            chunks = dense_hits_to_chunks(hits.points)[: self.fusion_top_k]
 
         if self.use_rerank and self.reranker is not None:
-            chunks = rerank_chunks(
-                question,
+            primary, subs = self._rerank_queries(qid, question)
+            chunks = rerank_chunks_hybrid(
+                primary,
+                subs,
                 chunks,
                 self.reranker,
-                top_k=len(chunks),
+                top_k=self.top_k,
                 batch_size=self.rerank_batch,
+                primary_weight=self.primary_weight,
+                sub_weight=self.sub_weight,
             )
-        chunks = filter_valid_chunks(chunks, limit=self.top_k)
+        chunks = filter_valid_chunks(
+            chunks, limit=self.top_k, stats=self.filter_stats
+        )
 
+        spec = self.subquery_index.get(qid)
+        _, subs = self._rerank_queries(qid, question)
+        sub_for_output = subs or None
         return {
             "id": qid,
             "question": question,
             "chunks": chunks,
-            "sub_queries": queries if len(queries) > 1 else None,
+            "sub_queries": sub_for_output,
         }
 
     def retrieve_batch(self, questions: list[dict]) -> list[dict]:
@@ -563,20 +789,9 @@ class RetrievalEngine:
         query_to_encode: set[str] = set()
         for q_item in questions:
             qid = q_item["id"]
-            if self.enable_subquery and qid in self.sub_query_map:
-                queries = self.sub_query_map[qid]
-            elif self.enable_subquery and self.embed_tokenizer is not None:
-                _, queries = plan_queries(
-                    q_item["question"],
-                    self.embed_tokenizer,
-                    threshold_1=self.token_threshold_1,
-                    threshold_2=self.token_threshold_2,
-                )
-                queries = queries or [q_item["question"]]
-            else:
-                queries = [q_item["question"]]
-            all_queries.extend(queries)
-            query_to_encode.update(queries)
+            query = self._retrieval_query(qid, q_item["question"])
+            all_queries.append(query)
+            query_to_encode.add(query)
 
         vectors_map: dict[str, list[float]] = {}
         if query_to_encode:
@@ -589,23 +804,11 @@ class RetrievalEngine:
 
         results: list[dict] = []
         for q_item in questions:
-            qid = q_item["id"]
-            if self.enable_subquery and qid in self.sub_query_map:
-                queries = self.sub_query_map[qid]
-            elif self.enable_subquery and self.embed_tokenizer is not None:
-                _, queries = plan_queries(
-                    q_item["question"],
-                    self.embed_tokenizer,
-                    threshold_1=self.token_threshold_1,
-                    threshold_2=self.token_threshold_2,
-                )
-                queries = queries or [q_item["question"]]
-            else:
-                queries = [q_item["question"]]
-
-            per_query_vectors = {q: vectors_map[q] for q in queries if q in vectors_map}
+            query = self._retrieval_query(q_item["id"], q_item["question"])
+            per_query_vectors = {query: vectors_map[query]} if query in vectors_map else None
             result = self.retrieve_one(q_item, query_vectors=per_query_vectors)
             results.append(result)
+        self.filter_stats.log_summary("  ")
         return results
 
 
@@ -927,7 +1130,8 @@ def append_retrieved_cache(cache_path: Path, new_items: list[dict]) -> None:
 
 
 def _needs_decompose(questions: list[dict], embed_tokenizer, args) -> bool:
-    if args.no_subquery:
+    """Legacy LLM path — only when --use-llm-subquery is set."""
+    if args.no_subquery or not getattr(args, "use_llm_subquery", False):
         return False
     for q in questions:
         n, preset = plan_queries(
@@ -935,6 +1139,7 @@ def _needs_decompose(questions: list[dict], embed_tokenizer, args) -> bool:
             embed_tokenizer,
             threshold_1=args.token_threshold_1,
             threshold_2=args.token_threshold_2,
+            use_token_budget=True,
         )
         if preset is None:
             return True
@@ -948,24 +1153,38 @@ def decompose_sub_queries(
     embed_model_path: Path,
 ) -> dict[int, list[str]]:
     embed_tokenizer = load_embed_tokenizer(embed_model_path)
-    if not _needs_decompose(questions, embed_tokenizer, args):
-        return {}
+    use_llm = getattr(args, "use_llm_subquery", False)
 
-    print("=== Decompose sub-queries (LLM) ===")
-    load_in_4bit = not args.no_4bit
-    model, tokenizer, eos_ids = load_llm(args.llm_model, args.device_llm, load_in_4bit=load_in_4bit)
-    try:
-        sub_map = batch_decompose_questions(
-            questions,
-            model,
-            tokenizer,
-            eos_ids,
+    if use_llm and _needs_decompose(questions, embed_tokenizer, args):
+        print("=== Decompose sub-queries (LLM) ===")
+        load_in_4bit = not args.no_4bit
+        model, tokenizer, eos_ids = load_llm(args.llm_model, args.device_llm, load_in_4bit=load_in_4bit)
+        try:
+            sub_map = batch_decompose_questions(
+                questions,
+                model,
+                tokenizer,
+                eos_ids,
+                embed_tokenizer,
+                threshold_1=args.token_threshold_1,
+                threshold_2=args.token_threshold_2,
+                use_token_budget=True,
+                use_llm=True,
+            )
+        finally:
+            unload_llm(model, args.device_llm)
+        return sub_map
+
+    sub_map: dict[int, list[str]] = {}
+    for q in questions:
+        queries = resolve_queries(
+            q["question"],
             embed_tokenizer,
             threshold_1=args.token_threshold_1,
             threshold_2=args.token_threshold_2,
         )
-    finally:
-        unload_llm(model, args.device_llm)
+        if len(queries) > 1:
+            sub_map[q["id"]] = queries
     return sub_map
 
 
@@ -973,10 +1192,16 @@ def make_retrieval_engine(
     args: argparse.Namespace,
     *,
     sub_query_map: dict[int, list[str]] | None = None,
+    subquery_index: dict[int, SubquerySpec] | None = None,
 ) -> RetrievalEngine:
     embed_tokenizer = None
-    if not args.no_subquery:
+    if not args.no_subquery and not subquery_index:
         embed_tokenizer = load_embed_tokenizer(args.embed_model)
+
+    if subquery_index is None:
+        subquery_index = load_subquery_index(args.subquery_cache)
+    if sub_query_map is None and subquery_index:
+        sub_query_map = subquery_map_from_index(subquery_index)
 
     return RetrievalEngine(
         embed_model_path=args.embed_model,
@@ -998,9 +1223,34 @@ def make_retrieval_engine(
         rerank_batch=args.rerank_batch,
         enable_subquery=not args.no_subquery,
         sub_query_map=sub_query_map,
+        subquery_index=subquery_index,
         token_threshold_1=args.token_threshold_1,
         token_threshold_2=args.token_threshold_2,
         embed_tokenizer=embed_tokenizer,
+        hybrid_rerank=True,
+        primary_weight=args.primary_weight,
+        sub_weight=args.sub_weight,
+    )
+
+
+def resolve_sub_query_map(
+    questions: list[dict],
+    *,
+    args: argparse.Namespace,
+) -> dict[int, list[str]]:
+    index = load_subquery_index(args.subquery_cache)
+    if index:
+        return {
+            q["id"]: retrieval_queries(index[q["id"]], q["question"])
+            for q in questions
+            if q["id"] in index
+        }
+    if args.no_subquery:
+        return {}
+    return decompose_sub_queries(
+        questions,
+        args=args,
+        embed_model_path=args.embed_model,
     )
 
 
@@ -1031,11 +1281,10 @@ def run_citations_pipeline(
     try:
         for start in range(0, total, pipeline_batch):
             batch_qs = questions[start : start + pipeline_batch]
-            if not args.no_subquery:
-                engine.sub_query_map = decompose_sub_queries(
+            if not args.no_subquery and not engine.subquery_index:
+                engine.sub_query_map = resolve_sub_query_map(
                     batch_qs,
                     args=args,
-                    embed_model_path=args.embed_model,
                 )
             retrieved_batch = engine.retrieve_batch(batch_qs)
             done_retrieve = min(start + pipeline_batch, total)
@@ -1053,6 +1302,7 @@ def run_citations_pipeline(
             print(f"  Done {done}/{total} (retrieve + citations)")
             del retrieved_batch
     finally:
+        engine.filter_stats.log_summary()
         engine.unload()
 
     print(f"Citations xong: {citation_count} câu ({time.time() - t0:.1f}s)")
@@ -1087,11 +1337,10 @@ def run_interleaved_pipeline(
     try:
         for start in range(0, total, pipeline_batch):
             batch_qs = questions[start : start + pipeline_batch]
-            if not args.no_subquery:
-                engine.sub_query_map = decompose_sub_queries(
+            if not args.no_subquery and not engine.subquery_index:
+                engine.sub_query_map = resolve_sub_query_map(
                     batch_qs,
                     args=args,
-                    embed_model_path=args.embed_model,
                 )
             retrieved_batch = engine.retrieve_batch(batch_qs)
             done_retrieve = min(start + pipeline_batch, total)
@@ -1143,6 +1392,7 @@ def run_interleaved_pipeline(
             if llm_model is not None:
                 offload_llm(llm_model, args.device_llm)
     finally:
+        engine.filter_stats.log_summary()
         engine.unload()
         if llm_model is not None:
             unload_llm(llm_model, args.device_llm)
@@ -1278,12 +1528,11 @@ def main() -> int:
             total = len(questions)
             for start in range(0, total, args.retrieve_batch):
                 batch_qs = questions[start : start + args.retrieve_batch]
-                if not args.no_subquery:
-                    engine.sub_query_map = decompose_sub_queries(
-                        batch_qs,
-                        args=args,
-                        embed_model_path=args.embed_model,
-                    )
+            if not args.no_subquery and not engine.subquery_index:
+                engine.sub_query_map = resolve_sub_query_map(
+                    batch_qs,
+                    args=args,
+                )
                 retrieved_batch = engine.retrieve_batch(batch_qs)
                 append_retrieved_cache(args.retrieved_cache, retrieved_batch)
                 done = min(start + args.retrieve_batch, total)

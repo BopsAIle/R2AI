@@ -14,6 +14,9 @@ from qdrant_config import normalize_chunk_payload
 
 TOKEN_RE = re.compile(r"\w+", re.UNICODE)
 
+DEFAULT_WEIGHT_RRF_DENSE = 0.4
+DEFAULT_WEIGHT_RRF_BM25 = 0.6
+
 
 def tokenize(text: str) -> list[str]:
     return [t.lower() for t in TOKEN_RE.findall(text) if len(t) > 1]
@@ -95,17 +98,28 @@ def bm25_top_k(
     return [(corpus[i], float(score)) for i, score in ranked if score > 0]
 
 
+def weighted_reciprocal_rank_fusion(
+    ranked_lists: list[list[tuple[str, float | None]]],
+    *,
+    weights: list[float] | None = None,
+    rrf_k: int = 60,
+) -> list[tuple[str, float]]:
+    """Fuse ranked lists with optional per-list weights (weightRRF)."""
+    fused: dict[str, float] = {}
+    for idx, ranked in enumerate(ranked_lists):
+        weight = 1.0 if weights is None else weights[idx]
+        for rank, (key, _) in enumerate(ranked, start=1):
+            fused[key] = fused.get(key, 0.0) + weight / (rrf_k + rank)
+    return sorted(fused.items(), key=lambda x: x[1], reverse=True)
+
+
 def reciprocal_rank_fusion(
     ranked_lists: list[list[tuple[str, float | None]]],
     *,
     rrf_k: int = 60,
 ) -> list[tuple[str, float]]:
-    """Fuse multiple ranked lists keyed by chunk_key. Each item: (key, optional raw score)."""
-    fused: dict[str, float] = {}
-    for ranked in ranked_lists:
-        for rank, (key, _) in enumerate(ranked, start=1):
-            fused[key] = fused.get(key, 0.0) + 1.0 / (rrf_k + rank)
-    return sorted(fused.items(), key=lambda x: x[1], reverse=True)
+    """Equal-weight RRF for merging same-type ranked lists (e.g. sub-queries)."""
+    return weighted_reciprocal_rank_fusion(ranked_lists, rrf_k=rrf_k)
 
 
 def chunk_record(
@@ -132,6 +146,7 @@ def chunk_record(
         "law_title": payload.get("law_title", ""),
         "file_name": payload.get("file_name", ""),
         "article_number": payload.get("article_number", ""),
+        "list_article": payload.get("list_article") or [],
         "text": payload.get("text", ""),
     }
 
@@ -198,6 +213,8 @@ def hybrid_retrieve_one(
     top_k: int,
     pool_size: int,
     rrf_k: int,
+    dense_weight: float = DEFAULT_WEIGHT_RRF_DENSE,
+    bm25_weight: float = DEFAULT_WEIGHT_RRF_BM25,
     bm25: BM25Okapi | None = None,
     corpus: list[dict[str, Any]] | None = None,
     sparse_hits: list | None = None,
@@ -237,9 +254,15 @@ def hybrid_retrieve_one(
         raise ValueError("Cần sparse_hits (Qdrant BM25) hoặc bm25+corpus (local index)")
 
     ranked_lists = [dense_ranked]
+    fusion_weights = [dense_weight]
     if bm25_ranked:
         ranked_lists.append(bm25_ranked)
-    fused = reciprocal_rank_fusion(ranked_lists, rrf_k=rrf_k)[:top_k]
+        fusion_weights.append(bm25_weight)
+    fused = weighted_reciprocal_rank_fusion(
+        ranked_lists,
+        weights=fusion_weights,
+        rrf_k=rrf_k,
+    )[:top_k]
 
     chunks: list[dict[str, Any]] = []
     for rank, (key, fused_score) in enumerate(fused, start=1):

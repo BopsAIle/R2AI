@@ -42,7 +42,7 @@ def main() -> None:
     parser.add_argument(
         "--use-bm25",
         action="store_true",
-        help="Hybrid retrieval: dense + BM25 (RRF fusion)",
+        help="Hybrid retrieval: dense + BM25 (weightRRF: dense=0.4, BM25=0.6)",
     )
     parser.add_argument(
         "--bm25-cache",

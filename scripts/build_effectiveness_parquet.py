@@ -4,12 +4,8 @@
 from __future__ import annotations
 
 import argparse
-import json
 import sys
 import time
-import urllib.error
-import urllib.parse
-import urllib.request
 from pathlib import Path
 
 import pandas as pd
@@ -18,52 +14,38 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
-from document_filters import parse_metadata_date
+from effectiveness_sources import fetch_effectiveness
 from ingest_parquet_to_qdrant import resolve_data_dir
 
 DEFAULT_DATA_DIR = Path(__file__).resolve().parent.parent.parent / "data"
 DEFAULT_OUTPUT = DEFAULT_DATA_DIR / "effectiveness.parquet"
-USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
-
-
-def fetch_vietlex_by_number(document_number: str) -> dict | None:
-    query = urllib.parse.quote(document_number)
-    search_url = f"https://vietlex.vn/api/v1/search?q={query}&limit=20"
-    req = urllib.request.Request(search_url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        payload = json.loads(resp.read().decode("utf-8"))
-
-    target = document_number.strip().upper()
-    doc_id = None
-    for item in payload.get("results", []):
-        if (item.get("soHieu") or "").strip().upper() == target:
-            doc_id = item.get("id")
-            break
-    if not doc_id:
-        return None
-
-    detail_url = f"https://vietlex.vn/api/v1/document/{doc_id}"
-    req = urllib.request.Request(detail_url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        detail = json.loads(resp.read().decode("utf-8")).get("document") or {}
-
-    return {
-        "eff_code": detail.get("hieuLucCode") or "",
-        "eff_status": detail.get("hieuLuc") or "",
-        "effective_date": detail.get("ngayBanHanh") or "",
-        "expiry_date": "",
-        "source": "vietlex",
-        "source_id": doc_id,
-    }
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Build data/effectiveness.parquet sidecar")
+    parser = argparse.ArgumentParser(
+        description="Build data/effectiveness.parquet sidecar (vbpl first, VietLex fallback)",
+    )
     parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR)
     parser.add_argument("--input-metadata", type=Path, default=None, help="Pre-filtered metadata parquet")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--sleep", type=float, default=0.2, help="Delay between API calls")
+    parser.add_argument("--timeout", type=float, default=30.0, help="HTTP/SOAP timeout per request")
+    parser.add_argument(
+        "--skip-vbpl",
+        action="store_true",
+        help="Skip vbpl.vn lookup (VietLex only)",
+    )
+    parser.add_argument(
+        "--skip-vietlex",
+        action="store_true",
+        help="Skip VietLex fallback",
+    )
+    parser.add_argument(
+        "--vbpl-verify-ssl",
+        action="store_true",
+        help="Verify TLS certificate for ws.vbpl.vn (default: disabled due to cert mismatch)",
+    )
     return parser.parse_args()
 
 
@@ -81,12 +63,16 @@ def main() -> int:
 
     rows: list[dict] = []
     total = len(meta)
-    print(f"Fetching effectiveness for {total:,} documents...")
+    print(f"Fetching effectiveness for {total:,} documents (vbpl → VietLex)...")
+
+    vbpl_hits = vietlex_hits = unknown = errors = 0
 
     for idx, row in enumerate(meta.itertuples(index=False), start=1):
         row_dict = row._asdict()
         doc_id = int(row_dict["id"])
         document_number = str(row_dict.get("document_number") or "").strip()
+        title = str(row_dict.get("title") or "").strip() or None
+
         record = {
             "id": doc_id,
             "document_number": document_number,
@@ -97,23 +83,49 @@ def main() -> int:
             "source": "unknown",
             "source_id": "",
         }
+
         if document_number:
             try:
-                fetched = fetch_vietlex_by_number(document_number)
-                if fetched:
-                    record.update(fetched)
-            except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
-                print(f"  [{idx}/{total}] id={doc_id} lỗi API: {exc}")
+                fetched = fetch_effectiveness(
+                    document_number,
+                    title=title,
+                    timeout=args.timeout,
+                    verify_ssl=args.vbpl_verify_ssl,
+                    use_vbpl=not args.skip_vbpl,
+                    use_vietlex=not args.skip_vietlex,
+                )
+                record.update(
+                    {
+                        "eff_code": fetched.get("eff_code") or "",
+                        "eff_status": fetched.get("eff_status") or "",
+                        "effective_date": fetched.get("effective_date") or "",
+                        "expiry_date": fetched.get("expiry_date") or "",
+                        "source": fetched.get("source") or "unknown",
+                        "source_id": fetched.get("source_id") or "",
+                    }
+                )
+                if fetched.get("vbpl_matched"):
+                    vbpl_hits += 1
+                elif fetched.get("vietlex_matched"):
+                    vietlex_hits += 1
+                elif record["source"] == "unknown":
+                    unknown += 1
+            except Exception as exc:
+                errors += 1
+                print(f"  [{idx}/{total}] id={doc_id} lỗi: {exc}")
+
         rows.append(record)
         if idx % 50 == 0 or idx == total:
-            print(f"  [{idx}/{total}] fetched")
+            print(f"  [{idx}/{total}] vbpl={vbpl_hits:,} vietlex={vietlex_hits:,} unknown={unknown:,}")
         time.sleep(args.sleep)
 
     out = pd.DataFrame(rows)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     out.to_parquet(args.output, index=False)
-    matched = (out["source"] == "vietlex").sum()
-    print(f"Đã lưu {len(out):,} rows → {args.output} (matched VietLex: {matched:,})")
+    print(
+        f"Đã lưu {len(out):,} rows → {args.output}\n"
+        f"  vbpl: {vbpl_hits:,} | VietLex fallback: {vietlex_hits:,} | unknown: {unknown:,} | errors: {errors:,}"
+    )
     return 0
 
 
